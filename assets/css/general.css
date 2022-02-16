@@ -1,0 +1,80 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 125px 20px 0 20px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+    background-color: goldenrod;
+    line-height: 75px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+header > * {
+    width: 33.3%;
+}
+
+header > a {
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+    text-align: right;
+}
+
+header > a {
+    margin-right: 30px;
+}
+
+header > p {
+    text-align: center;
+}
+
+label, form > div {
+    display: inline-block;
+}
+
+input {
+    margin-right: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+header > div {
+    display: inline-block;
+}
+
+header > div:last-child {
+    float: right;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 630px) {
+    header > a, header > p {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    header > div {
+        width: 10%;
+    }
+
+    header {
+        justify-content: normal;
+    }
+
+    header > a {
+        margin-right: 10px;
+        width: 50%;
+    }
+}

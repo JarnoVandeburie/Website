@@ -1,0 +1,103 @@
+main {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article, form{
+    border-radius: 30px;
+}
+
+article {
+    background-color: #F5F5F5;
+    margin-bottom: 50px;
+    padding: 0 40px 0 40px;
+    position: relative;
+}
+
+article h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.topText {
+    position: relative;
+}
+
+.topText p {
+    width: 70%;
+}
+
+.list h1 {
+    margin-bottom: 0;
+}
+
+.list p:last-child {
+    margin-top: 15px;
+}
+
+article div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+article img, .description p  {
+    margin-bottom: 20px;
+}
+
+#logo {
+    float: right;
+    right: 30px;
+    max-width: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.titleShort {
+    white-space: nowrap;
+    width: fit-content;
+    text-decoration: underline;
+}
+.titleShort:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+label[for=compact] {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+#compact {
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid black;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#compact:checked {
+    background-color: goldenrod;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #logo {
+        top: 20px;
+        width: 75px;
+        transform: translateY(0);
+    }
+
+    .topText p {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
