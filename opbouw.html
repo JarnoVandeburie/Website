@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/general.css"/>
+    <link rel="stylesheet" href="assets/css/filtermenu.css"/>
+    <link rel="stylesheet" href="assets/css/opbouw.css"/>
+    <title>Home</title>
+</head>
+<body>
+
+<header>
+    <div>
+        <div class="filtermenu"></div>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+        </div>
+    </div>
+
+    <p>Opbouw site</p>
+    <a href="index.html">Jarno Vandeburie</a>
+</header>
+
+<main>
+    <article>
+        <h1>Gebruikte technieken</h1>
+    </article>
+
+    <article>
+        <h1>Nieuw artikel toevoegen</h1>
+        <h2>Tekst toevoegen</h2>
+        <p>Het toevoegen van tekst aan een artikel is heel simpel.</p>
+        <p>Doordat er gebruikt gemaakt wordt van JSON, kan een nieuw artikel toegevoegd worden in <span>artikels.json</span> door middel van het dupliceren van een vorig en daarna de eigenschappen in te vullen.</p>
+
+        <img class="inline" src="assets/images/articleJson.png" alt="">
+
+        <h2>Afbeeldingen toevoegen</h2>
+        <p>Alle gebruikte afbeeldingen in verband met de artikelen moeten in de folder <span>assets/images/articles</span> komen met de png-extensie.</p>
+        <p>Om het logo te veranderen moet de naam van het bestand (zonder extensie) meegegeven worden als waarde voor <span>logo</span> in de JSON</p>
+        <p>Om een afbeelding in de tekst te plaatsen maak je een nieuwe string aan die begint met <span>@IMAGE-</span> gevolgd door de bestandsnaam zonder extensie.</p>
+    </article>
+
+</main>
+
+<script src="assets/javascript/generateSidebarMenu.js"></script>
+<script src="assets/javascript/require.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+article img {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+article {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}

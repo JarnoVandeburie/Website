@@ -21,10 +21,6 @@ section > img {
     width: 30%;
 }
 
-section p {
-    margin-bottom: 10px;
-}
-
 section h1 {
     font-weight: bold;
     font-size: 2rem;
