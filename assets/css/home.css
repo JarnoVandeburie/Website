@@ -48,14 +48,9 @@ section h1 {
     }
 
     section > img {
-        width: 50%;
+        width: 75%;
+        margin-top: 20px;
         margin-left: 50%;
         transform: translateX(-50%);
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    section > img {
-        width: 80%;
     }
 }
