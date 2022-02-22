@@ -3,6 +3,14 @@ body {
     margin: 125px 20px 0 20px;
 }
 
+a {
+    white-space: nowrap;
+}
+
+p {
+    line-height: 1.3rem;
+}
+
 h2 {
     font-size: 1.2rem;
     font-weight: bold;
