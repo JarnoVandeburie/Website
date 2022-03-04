@@ -1,7 +1,7 @@
 [
   {
     "title": "Title 1",
-    "logo": "title1logo",
+    "logo": "title1logo.png",
     "description": "This is the description. I've made this very long so it would stretch over two lines so I really hope you enjoy reading this... Damn it, it isn't long enough, I need to write more then I expected.",
     "date": "01/01/1990",
     "location": "Online",
@@ -11,9 +11,9 @@
     "text": [
       "This is a first alinea with some text.<br>Dit staat op de 2e lijn.",
       "This is the text before the image",
-      "@IMAGE-firstImage",
+      "@IMAGE-firstImage.png",
       "This is the text after the image",
-      "@IMAGE-secondImage"
+      "@IMAGE-secondImage.png"
     ],
     "experience" : {
       "positivePoints" : ["Competetief", "Leerrkijk", "Uitdagend"],
@@ -23,7 +23,7 @@
 
   {
     "title": "Title 2",
-    "logo": "title1logo",
+    "logo": "title1logo.png",
     "description": "This is the description. I've made this very long so it would stretch over two lines so I really hope you enjoy reading this... Damn it, it isn't long enough, I need to write more then I expected.",
     "date": "01/01/1991",
     "location": "Online",
@@ -33,9 +33,9 @@
     "text": [
       "This is a first alinea with some text.<br>Dit staat op de 2e lijn.",
       "This is the text before the image",
-      "@IMAGE-firstImage",
+      "@IMAGE-firstImage.png",
       "This is the text after the image",
-      "@IMAGE-secondImage"
+      "@IMAGE-secondImage.png"
     ],
     "experience" : {
       "positivePoints" : ["Competetief", "Leerrkijk", "Uitdagend"],

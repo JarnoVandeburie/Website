@@ -27,7 +27,7 @@ function loadArticle(data, title) {
                     <p>${article.date} - ${article.location}</p>
                     <p>${article.frequency} georganiseerd door ${article.organiser} voor ${article.audience}</p>
                 </div>
-                <img src="assets/images/articles/${article.logo}.png" alt="" id="logo">
+                <img src="assets/images/articles/${article.logo}" alt="" id="logo">
             </div>
             <hr>
             <div class="description">
@@ -43,7 +43,7 @@ function generateText(textArray) {
     for (let blockIndex in textArray) {
         let block = textArray[blockIndex];
         if (block.includes("@IMAGE-")) {
-            let image = "assets/images/articles/" + block.split("@IMAGE-")[1] + ".png";
+            let image = "assets/images/articles/" + block.split("@IMAGE-")[1];
             output += `<img src="${image}" alt="${image}">`;
         } else {
             output += `<p>${block}</p>`

@@ -1,6 +1,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 125px 20px 0 20px;
+    background-color: #F5F5F5;
 }
 
 a {
@@ -28,7 +29,7 @@ article, form{
 }
 
 article {
-    background-color: #F5F5F5;
+    background-color: #EAEAEA;
     margin-bottom: 50px;
     padding: 0 40px 0 40px;
     position: relative;
@@ -53,18 +54,19 @@ header {
     justify-content: space-between;
     color: white;
     text-transform: uppercase;
-    z-index: 1;
+    z-index: 2;
 }
 
 header > * {
     width: 33.3%;
 }
 
-header > a {
+header > p > a {
     color: white;
     text-decoration: none;
     text-transform: none;
-    text-align: right;
+    float: right;
+    padding-right: 30px;
 }
 
 header > a {
@@ -74,7 +76,7 @@ header > a {
 header > p {
     text-align: center;
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 label, form > div {
@@ -107,7 +109,7 @@ span {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 700px) {
     header > a, header > p {
         font-size: 1rem;
     }
@@ -118,11 +120,12 @@ span {
     }
 
     header {
-        justify-content: normal;
+        justify-content: space-between;
     }
 
     header > a {
-        margin-right: 10px;
+        margin-right: 0;
+        padding: 0;
         width: 50%;
     }
 }

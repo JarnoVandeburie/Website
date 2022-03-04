@@ -38,7 +38,7 @@ function loadArticles(data) {
                     <p>${data[index].description}</p>
                 </div>
             </div>
-            <img src="assets/images/articles/${data[index].logo}.png" alt="logo" id="logo">
+            <img src="assets/images/articles/${data[index].logo}" style="margin-right: 30px" alt="logo" id="logo">
         </article>
         `
     }
@@ -55,12 +55,8 @@ function sortData(data) {
 
 function changeCompact(e) {
     if (e.target.checked) {
-        document.querySelectorAll("article > div > div, article img").forEach(item => item.style.display = "none");
-        document.querySelectorAll("article").forEach(item => item.style.marginBottom = "10px");
-        document.querySelectorAll("article h1").forEach(item => item.style.fontSize = "1.5rem");
+        document.querySelectorAll("article").forEach(item => item.classList.add("compact"));
     } else {
-        document.querySelectorAll("article > div > div, article img").forEach(item => item.style.display = "inherit");
-        document.querySelectorAll("article").forEach(item => item.style.marginBottom = "50px");
-        document.querySelectorAll("article h1").forEach(item => item.style.fontSize = "2rem");
+        document.querySelectorAll("article").forEach(item => item.classList.remove("compact"));
     }
 }

@@ -25,7 +25,7 @@ article img, .description p  {
 
 #logo {
     float: right;
-    right: 30px;
+    right: 0;
     max-width: 100px;
     top: 50%;
     transform: translateY(-50%);
@@ -66,10 +66,44 @@ label[for=compact] {
     border: none;
 }
 
+#back {
+    top: 85px;
+    left: 10px;
+    position: fixed;
+    background-color: goldenrod;
+    padding: 20px;
+    font-size: 1.25rem;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+#back a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.compact {
+    margin-bottom: 10px;
+}
+
+.compact h1 {
+    font-size: 1.5rem;
+}
+
+.compact > div > div{
+    display: none;
+}
+
+.compact img {
+    height: 50px;
+}
+
 @media only screen and (max-width: 600px) {
-    #logo {
+    article:not(.compact) #logo {
         top: 20px;
-        width: 75px;
         transform: translateY(0);
     }
 

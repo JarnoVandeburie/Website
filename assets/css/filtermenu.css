@@ -78,7 +78,7 @@ header input[type=checkbox] {
     box-sizing: border-box;
     position: absolute;
     z-index: 99;
-    left: 15px;
+    left: 25px;
     width: 22px;
     top: 50%;
     transform: translateY(-50%);
