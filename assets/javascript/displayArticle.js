@@ -23,15 +23,26 @@ function loadArticle(data, title) {
         <article>
             <div class="topText">
             <h1>${title}</h1>
+            <img src="assets/images/articles/${article.logo}" alt="" id="logo">
                 <div>
                     <p>${article.date} - ${article.location}</p>
                     <p>${article.frequency} georganiseerd door ${article.organiser} voor ${article.audience}</p>
                 </div>
-                <img src="assets/images/articles/${article.logo}" alt="" id="logo">
             </div>
             <hr>
             <div class="description">
                 ${generateText(article.text)}
+                
+                <div class="experience">
+                    <div>
+                        <h3>Positive points</h3>
+                        <ul>${generateList(article.experience.positivePoints)}</ul>
+                    </div>
+                    <div>
+                        <h3>Negative points</h3>
+                        <ul>${generateList(article.experience.negativePoints)}</ul>
+                    </div>
+                </div>
             </div>
         </article>
         `
@@ -52,6 +63,17 @@ function generateText(textArray) {
 
     return output;
 }
+
+function generateList(points) {
+    let output = ``;
+
+    for (let pointIndex in points) {
+        output += `<li>${points[pointIndex]}</li>`;
+    }
+
+    return output;
+}
+
 
 function getArticleByTitle(data, title) {
     let output = null;

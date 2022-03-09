@@ -32,13 +32,13 @@ function loadArticles(data) {
         <article>
             <div class="topText">
             <h1 class="titleShort">${data[index].title}</h1>
+            <img src="assets/images/articles/${data[index].logo}" alt="logo" id="logo">
                 <div>
                     <p>${data[index].date} - ${data[index].location}</p>
                     <p>${data[index].frequency} georganiseerd door ${data[index].organiser} voor ${data[index].audience}</p>
                     <p>${data[index].description}</p>
                 </div>
             </div>
-            <img src="assets/images/articles/${data[index].logo}" style="margin-right: 30px" alt="logo" id="logo">
         </article>
         `
     }

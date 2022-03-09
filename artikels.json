@@ -1,23 +1,23 @@
 [
   {
-    "title": "Title 1",
-    "logo": "title1logo.png",
-    "description": "This is the description. I've made this very long so it would stretch over two lines so I really hope you enjoy reading this... Damn it, it isn't long enough, I need to write more then I expected.",
-    "date": "01/01/1990",
+    "title": "Hack The Future 2021",
+    "logo": "hackthefuture/logo.png",
+    "description": "In deze Hack The Future gingen we op zoek naar de moodenaar/moordenares van de flamboyante miljardair oprichtster van MicroHard, Jill Bridges. Dit deden we aan de hand van allerlei challenges.",
+    "date": "02/12/2021",
     "location": "Online",
-    "frequency": "Wekelijks",
-    "audience": "Cyber security studenten",
-    "organiser": "Organiser",
+    "frequency": "Jaarlijks",
+    "audience": "hackers en creative studenten",
+    "organiser": "HackTheFuture",
     "text": [
-      "This is a first alinea with some text.<br>Dit staat op de 2e lijn.",
-      "This is the text before the image",
+      "Samen met Damier Clays vormde ik het team <i>placeholder</i>. Onze eerste keuze was om mee te doen met de Security escape room, maar deze was helaas al volzet en dus hebben we mee gedaan met onze tweede keuze, Java/Backend Development. Dit was voor ons een klein beetje een uitdaging want het was al anderhalf jaar geleden dat we nog eens een hele dag Java hadden gedaan, maar toch begonnen we met volle moed.",
+      "We kregen verschillende challenges voorgeschoteld en onze opdracht was om code te schrijven om deze op te lossen. Als we deze juist oplosten kregen we een tip naar de moordenaar/moordenares van Jill Bridges. We besloten om elke opdracht in een aparte klasse te maken zodat alles leesbaar bleef. Uiteindelijk hebben we bijna alle opdrachten tot een goed einde kunnen brengen, of dat dachten we toch. Uiteindelijk beleek één of meerdere opdrachten een foutje te bevatten en dus gaven ze een verkeerde tip als uitkomst.",
       "@IMAGE-firstImage.png",
-      "This is the text after the image",
-      "@IMAGE-secondImage.png"
+      "Om 16u begonnen de pitches. Elke groep kwam aan bod en vertelde over hun ervaring en resultaat. Er waren zowel groepen die wat moeite hadden om de opdrachten te voltooien, als groepen die een geweldige dag achter de rug hadden. Een groep dat mij zeker bij blijft had een programma geschreven die alle info uit de API haalde, de tips berekende en de juiste dader aan het licht bracht. Natuurlijk hadden Damier en ik hier ook aan gedacht maar wij dachten dat dit een helse taak was om te doen in 5 uur tijd. Mijn mond viel wel even open toen zij hun programma presenteerden.",
+      "Uiteindelijk, om 18u30, kwam dan de prijsuitrijking. Uit alle categorieën werd een winnaar en een groepsfavoriet gekozen. Tot niemands verbazing won de eerder beschreven groep in onze categorie. Een paar dagen later kregen wij een mail met ons resultaat. We eindigde op de XXde plaats van de XX groepen. Uitendelijk kregen we nog een goodiebag met allerlei leuke spulletjes."
     ],
     "experience" : {
-      "positivePoints" : ["Competetief", "Leerrkijk", "Uitdagend"],
-      "negativePoints" : ["Veel opdrachten voor weinig tijd"]
+      "positivePoints" : ["Competetief", "Leerrijk", "Uitdagend"],
+      "negativePoints" : ["Veel opdrachten"]
     }
   },
 
@@ -25,7 +25,7 @@
     "title": "Title 2",
     "logo": "title1logo.png",
     "description": "This is the description. I've made this very long so it would stretch over two lines so I really hope you enjoy reading this... Damn it, it isn't long enough, I need to write more then I expected.",
-    "date": "01/01/1991",
+    "date": "12/02/2021",
     "location": "Online",
     "frequency": "Wekelijks",
     "audience": "Cyber security studenten",

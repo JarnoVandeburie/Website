@@ -7,33 +7,48 @@
 }
 
 .list h1 {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .list p:last-child {
     margin-top: 15px;
 }
 
-article div {
-    padding-top: 20px;
-    padding-bottom: 20px;
+article {
+    padding: 20px 30px;
 }
 
 article img, .description p  {
     margin-bottom: 20px;
 }
 
+.topText div {
+    width: 90%;
+}
+
+.experience {
+    display: flex;
+}
+
+.experience > div:first-child {
+    margin-right: 30px;
+}
+
+.experience li {
+    margin-bottom: 5px;
+}
+
 #logo {
     float: right;
     right: 0;
-    max-width: 100px;
+    max-height: 100px;
+    max-width: 30%;
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
 }
 
 .titleShort {
-    white-space: nowrap;
     width: fit-content;
     text-decoration: underline;
 }
@@ -97,18 +112,31 @@ label[for=compact] {
     display: none;
 }
 
-.compact img {
-    height: 50px;
+.compact #logo {
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {
     article:not(.compact) #logo {
-        top: 20px;
+        margin-top: 10px;
         transform: translateY(0);
+        display: block;
+        float: left;
+        position: relative;
+        margin-bottom: 0;
+        max-width: unset;
+        max-height: 75px;
+    }
+
+    .topText div {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        padding-top: 0;
     }
 
     .topText p {
         width: 100%;
-        margin-top: 20px;
+        margin: 20px 0 0 0;
     }
 }
