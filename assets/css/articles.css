@@ -22,6 +22,10 @@ article img, .description p  {
     margin-bottom: 20px;
 }
 
+.description img {
+    max-width: 100%;
+}
+
 .topText div {
     width: 90%;
 }
