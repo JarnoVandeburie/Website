@@ -17,7 +17,7 @@ function init() {
 }
 
 function redirect(e) {
-    let title = (e.target.innerText).replace(" ", "~");
+    let title = (e.target.innerText).replaceAll(" ", "~");
     window.location = 'info_artikel.html?title=' + title;
 }
 

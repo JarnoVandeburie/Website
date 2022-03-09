@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    let title = new URLSearchParams(window.location.search).get('title').replace("~", " ");
+    let title = new URLSearchParams(window.location.search).get('title').replaceAll("~", " ");
 
     document.querySelector("#pagetitle").innerHTML = title;
 
