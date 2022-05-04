@@ -8,6 +8,7 @@ function init() {
 
     fetch("./artikels.json")
         .then(response => {
+            console.log(response);
             return response.json();
         })
         .then(jsondata => {
