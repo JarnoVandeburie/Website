@@ -8,10 +8,11 @@ function init() {
 
     fetch("./artikels.json")
         .then(response => {
-            console.log(response);
+            console.log("response:" + response);
             return response.json();
         })
         .then(jsondata => {
+            console.log("jsondata:" + jsondata);
             loadArticles(jsondata);
             document.querySelectorAll(".titleShort").forEach(title => title.addEventListener('click', redirect));
         });
