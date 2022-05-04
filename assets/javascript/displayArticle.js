@@ -56,6 +56,16 @@ function generateText(textArray) {
         if (block.includes("@IMAGE-")) {
             let image = "assets/images/articles/" + block.split("@IMAGE-")[1];
             output += `<img src="${image}" alt="${image}">`;
+
+        } else if (block.includes("@LIST-")) {
+
+            let items = block.split("@LIST-")[1].split("~");
+            output += `<ul>`;
+            items.forEach(item => {
+                output += `<li>${item}</li>`;
+            })
+            output += `</ul>`;
+
         } else {
             output += `<p>${block}</p>`
         }

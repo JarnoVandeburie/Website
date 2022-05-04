@@ -18,8 +18,13 @@ article {
     padding: 20px 30px;
 }
 
-article img, .description p  {
-    margin-bottom: 20px;
+article img, .description p:not(:first-child)  {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.description li {
+    margin-top: 5px;
 }
 
 .description img {
@@ -31,6 +36,7 @@ article img, .description p  {
 }
 
 .experience {
+    margin-top: 20px;
     display: flex;
 }
 
@@ -43,6 +49,7 @@ article img, .description p  {
 }
 
 #logo {
+    margin-top: 0;
     float: right;
     right: 0;
     max-height: 100px;

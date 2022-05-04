@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\css",
+    "\\assets\\images",
+    "\\assets\\images\\articles",
+    "\\assets\\images\\articles\\hackthefuture",
+    "\\assets\\images\\articles\\NahamCon",
+    "\\assets\\javascript"
   ],
-  "SelectedNode": "\\C:\\Users\\jarno.vandeburie\\Source\\Repos\\Website",
+  "SelectedNode": "\\artikels.json",
   "PreviewInSolutionExplorer": false
 }
