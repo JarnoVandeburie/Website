@@ -19,7 +19,7 @@ function init() {
 function loadArticle(data, title) {
     let article = getArticleByTitle(data, title);
 
-    document.querySelector("#articles").innerHTML += `
+    document.querySelector("#article").innerHTML += `
         <article>
             <div class="topText">
             <h1>${title}</h1>

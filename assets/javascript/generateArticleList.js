@@ -24,7 +24,22 @@ function redirect(e) {
 }
 
 function loadArticles(data) {
-    data = sortData(data);
+    let oldestFirst = false; //temp
+
+    data.sort(function(a,b) {
+        a = a.date.split('/').reverse().join('');
+        b = b.date.split('/').reverse().join('');
+        if (oldestFirst) {
+            return a > b ? 1 : a < b ? -1 : 0;
+        } else {
+            return a < b ? 1 : a > b ? -1 : 0;
+        }
+    });   
+
+    generateArticles(data)
+}
+
+function generateArticles(data) {
     let articleContainer = document.querySelector("#articles");
 
     for (let index in data) {
@@ -34,24 +49,16 @@ function loadArticles(data) {
         <article>
             <div class="topText">
             <h1 class="titleShort">${data[index].title}</h1>
-            <img src="assets/images/articles/${data[index].logo}" alt="logo" id="logo">
+            <div class="logo"><img src="assets/images/articles/${data[index].logo}" alt="logo"></div>
                 <div>
                     <p>${data[index].date} - ${data[index].location}</p>
-                    <p>${data[index].frequency} georganiseerd door ${data[index].organiser} voor ${data[index].audience}</p>
+                    <p>${data[index].frequency == "" ? "Georganiseerd" : data[index].frequency + " georganiseerd"} door ${data[index].organiser} voor ${data[index].audience}</p>
                     <p>${data[index].description}</p>
                 </div>
             </div>
         </article>
         `
     }
-}
-
-function sortData(data) {
-    let dataArray = Object.values(data);
-
-    return dataArray.sort(function (a, b) {
-        return Date.parse(b.date) - Date.parse(a.date);
-    });
 }
 
 

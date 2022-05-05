@@ -2,12 +2,16 @@
     position: relative;
 }
 
-.topText p {
-    width: 70%;
+#articles .topText {
+    position: initial;
 }
 
-.list h1 {
-    margin-bottom: 10px;
+.topText p {
+    width: 75%;
+}
+
+article.compact .topText h1 {
+    margin-bottom: 0;
 }
 
 .list p:last-child {
@@ -48,21 +52,35 @@ article img, .description p:not(:first-child)  {
     margin-bottom: 5px;
 }
 
-#logo {
+.logo, #logo {
     margin-top: 0;
     float: right;
     right: 0;
     max-height: 100px;
-    max-width: 30%;
+    max-width: 25%;
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    margin: 0;
+    position: relative;
+    max-height: 90px;
+    max-width: 90%;
+}
+#article #logo {
+    max-height: 80px;
+    max-width: 80%;
 }
 
 .titleShort {
     width: fit-content;
     text-decoration: underline;
 }
+
 .titleShort:hover{
     cursor: pointer;
     text-decoration: none;
@@ -123,12 +141,12 @@ label[for=compact] {
     display: none;
 }
 
-.compact #logo {
+.compact .logo {
     display: none;
 }
 
 @media only screen and (max-width: 600px) {
-    article:not(.compact) #logo {
+    article:not(.compact) .logo {
         margin-top: 10px;
         transform: translateY(0);
         display: block;

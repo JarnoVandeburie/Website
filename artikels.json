@@ -25,10 +25,10 @@
     "title": "NahamCon CTF 2022",
     "logo": "nahamCon/logo.png",
     "description": "NahamCon is een Capture The Flag georganiseerd door STÖK, John Hammond en NahamSec en gehost door JustHacking.",
-    "date": "28/04/2022 - 30/04/2022",
+    "date": "28/04/2022",
     "location": "Online",
     "frequency": "Jaarlijks",
-    "audience": "Iedereen",
+    "audience": "iedereen",
     "organiser": "STÖK, John Hammond en NahamSec",
     "text": [
         "Het event duurde 48u en liep van donderdag 28 april 22:00 tot zaterdag 30 april 22:00. Omdat wij nog stage hadden, konden wij enkel de zaterdag mee doen. Met 'wij' bedoel ik Damier Claeys en mezelf. Opnieuw vormden wij het duo met de naam <i>placeholder</i>.",
@@ -41,6 +41,60 @@
     "experience" : {
       "positivePoints" : ["Meerdaagse", "Veel types"],
       "negativePoints" : ["Start op een donderdag"]
+    }
+  },
+
+  {
+    "title": "RMM webinars",
+    "logo": "rmm/logo.png",
+    "description": "",
+    "date": "25/02/2022",
+    "location": "Online",
+    "frequency": "Wekelijks",
+    "audience": "iedereen",
+    "organiser": "Datto",
+    "text": [
+        
+    ],
+    "experience" : {
+      "positivePoints" : [],
+      "negativePoints" : []
+    }
+  },
+
+  {
+    "title": "CEH Examen",
+    "logo": "ceh/logo.png",
+    "description": "",
+    "date": "25/02/2022",
+    "location": "Online",
+    "frequency": "",
+    "audience": "iedereen met minstens 2 jaar ervaring in Information Security",
+    "organiser": "EC-Council",
+    "text": [
+        
+    ],
+    "experience" : {
+      "positivePoints" : [],
+      "negativePoints" : []
+    }
+  },
+
+  {
+    "title": "HackTheBox livestream",
+    "logo": "hackthebox/logo.png",
+    "description": "",
+    "date": "14/12/2021",
+    "location": "Online",
+    "frequency": "",
+    "audience": "iedereen",
+    "organiser": "",
+    "text": [
+        
+    ],
+    "experience" : {
+      "positivePoints" : [ "Later bekijkbaar" ],
+      "negativePoints" : [ "Duurt lang" ]
     }
   }
 ]
