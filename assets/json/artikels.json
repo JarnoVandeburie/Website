@@ -33,7 +33,7 @@
     "text": [
         "Het event duurde 48u en liep van donderdag 28 april 22:00 tot zaterdag 30 april 22:00. Omdat wij nog stage hadden, konden wij enkel de zaterdag mee doen. Met 'wij' bedoel ik Damier Claeys en mezelf. Opnieuw vormden wij het duo met de naam <i>placeholder</i>.",
         "Elke challenge was gecategoriseerd in een van volgende types.",
-        "@LIST-Warmups~Web~Binary Exploitation~Reverse Engineering~Cryptography~Forensics~Mobile~DevOps~Hardware/RF~Malware~Miscellaneous~Networking~Scripting~Steganography~OSINT",
+        "@LIST-Warmups ~ Web ~ Binary Exploitation ~ Reverse Engineering ~ Cryptography ~ Forensics ~ Mobile ~ DevOps ~ Hardware/RF ~ Malware ~ Miscellaneous ~ Networking ~ Scripting ~ Steganography ~ OSINT",
         "Niet elk type ging even vlot bij ons. We hebben vooral warmups en OSINT challenges kunnen oplossen, maar dat was niet altijd door een gebrek aan kennis. Er zaten vaak addertjes onder het gras.<br>Zo was er een challenge waarbij de verstreken tijd gevraagd werd van een persoon die heen en weer vloog tussen Samoa en Amerikaans Samoa op 31 december 2011. Dit leek ons een makkelijke opdracht en dat was het ook, deze lostten we op in een kwartiertje. Of dat dachten we toch. 30 December 2011 bestond niet in Samoa en Samoa volgt het zomer- en winteruur, Amerikaans Samoa niet.",
         "Uiteindelijk werden we 1144e van de 4034 teams die mee deden. Overal is dit geen verschrikkelijk resultaat aangezien we later toegetreden zijn, maar toch had ik gehoopt dat ikzelf iets meer ging vinden. Ik had vaak het gevoel dat ik heel dichtbij de oplossing zat maar net dat laatste beetje kennis miste.",
         "@IMAGE-nahamCon/certificaat.png"
@@ -47,17 +47,20 @@
   {
     "title": "RMM webinars",
     "logo": "rmm/logo.png",
-    "description": "",
-    "date": "25/02/2022",
+    "description": "Omdat mijn stage RMM gebruikt, stelden ze voor om verschillende webinars te volgen over RMM.",
+    "date": "14/02/2022",
     "location": "Online",
     "frequency": "Wekelijks",
-    "audience": "iedereen",
+    "audience": "RMM Gebruikers",
     "organiser": "Datto",
     "text": [
-        
+        "Tijdens mijn eerste week stage moest ik vooral gewend worden aan de tools. Eèn van die tools is Datto RMM. Op de <a href='https://academy.datto.com' target='_blank'>academy van Datto</a> staan verschillende webinars die ik gevolgd heb. De meeste van de webinars die ik heb gevolgd waren live webinars die men opgenomen had en op de site heeft geplaatst.",
+        "De volgende webinars zijn de opnames die ik bekeken heb om vertrouwd te raken met de tool:",
+        "@LIST-Intro to Monitoring ~ Monitoring Mishaps ~ Gathering Intelligence with Scripts ~ Intro to Automation with Components and Jobs ~ Third-Party Software Management ~ Efficient Monitor Management",
+        "Op 17/02/2022 heb ik dan ook een semi-live webinar gevolgd over de nieuwe UI van RMM. Normaal gezien zou dit worden live gestreamd maar door enkele problemen was dit niet mogelijk. Men had de webinar op voorhand opgenomen en speelde die af. Op hetzelfde moment zaten de hosts in de chat om onze vragen te beantwoorden."
     ],
     "experience" : {
-      "positivePoints" : [],
+      "positivePoints" : [ "Veel leermateriaal", "Duidelijk" ],
       "negativePoints" : []
     }
   },
@@ -97,4 +100,5 @@
       "negativePoints" : [ "Duurt lang" ]
     }
   }
+
 ]

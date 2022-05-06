@@ -6,13 +6,11 @@ function init() {
     let checkbox = document.querySelector("#compact");
     checkbox.addEventListener("change", changeCompact);
 
-    fetch("./artikels.json")
+    fetch("assets/json/artikels.json")
         .then(response => {
-            console.log("response:" + response);
             return response.json();
         })
         .then(jsondata => {
-            console.log("jsondata:" + jsondata);
             loadArticles(jsondata);
             document.querySelectorAll(".titleShort").forEach(title => title.addEventListener('click', redirect));
         });

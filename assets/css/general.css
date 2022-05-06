@@ -8,6 +8,12 @@ a {
     white-space: nowrap;
 }
 
+code {
+    background-color: #CCC;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
 li {
     list-style-type: initial;
     margin-left: 18px;

@@ -23,7 +23,7 @@ article {
 }
 
 article img, .description p:not(:first-child)  {
-    margin-top: 20px;
+    margin-top: 12px;
     margin-bottom: 0px;
 }
 

@@ -1,8 +1,11 @@
 article img {
-    width: 100%;
-    max-width: 600px;
+    width: 75%;
+    max-width: 800px;
     margin-left: 50%;
     transform: translateX(-50%);
+}
+
+.imagegroup, article img{
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -14,4 +17,18 @@ article {
 
 article h2 {
     margin-bottom: 2px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .imagegroup {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    article .imagegroup img {
+        align-self: center;
+        max-width: 45%;
+        margin: 0;
+        transform: translateX(0);
+    }
 }

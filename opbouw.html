@@ -46,22 +46,43 @@
 
         <h2>JSON</h2>
         <p>Zoals aangehaald in het hoofdstukje hierboven, wordt er gebruik gemaakt van JSON om de artikelen in te lezen. Alle belangrijke elementen hebben hun eigen parameters. Er is ook een optie voor een beschrijving toe te voegen aan de artikelen. Dit is een samenvatting van het artikel en dit wordt alleen weergegeven op het scherm met alle artikelen.</p>
+    
+        <h2>Hosting</h2>
+        <p>Deze website is online toegankelijk met behulp van GitHub. Nadat ik een deel van de site heb toegevoegd of bijgewerkt stuur ik de code naar mijn GitHub repository. GitHub update dan automatisch de getoonde website.
+        <br>Tijdens het bewerken gebruikte ik <code>py -m http.server</code> om lokaal een website te hosten. Zo moest ik niet na elke kleine aanpassing de code op GitHub plaatsen om de veranderingen te zien. Dit was nodig omdat ik de artikelen anders niet kon lezen.
+        <img src="assets/images/opbouw/error.png" alt="">
     </article>
 
     <article>
         <h1>Nieuw artikel toevoegen</h1>
         <h2>Tekst toevoegen</h2>
         <p>Het toevoegen van tekst aan een artikel is heel simpel.
-            <br> Doordat er gebruikt gemaakt wordt van JSON, kan een nieuw artikel toegevoegd worden in <span>artikels.json</span> door middel van het dupliceren van een vorig en daarna de eigenschappen in te vullen.</p>
+            <br> Doordat er gebruikt gemaakt wordt van JSON, kan een nieuw artikel toegevoegd worden in <span>artikels.json</span> door middel van het dupliceren van een vorig item en daarna de eigenschappen in te vullen.</p>
 
-        <img src="assets/images/articleJson.png" alt="">
+        <div class="imagegroup">
+            <img src="assets/images/opbouw/tekst.png" alt="">
+            <img src="assets/images/opbouw/tekst_result.png" alt="">
+        </div>
 
         <h2>Afbeeldingen toevoegen</h2>
-        <p>Alle gebruikte afbeeldingen in verband met de artikelen moeten in de folder <span>assets/images/articles</span> komen met de png-extensie.
+        <p>Alle gebruikte afbeeldingen in verband met de artikelen moeten in de folder <span>assets/images/articles</span> komen. Elk artikel heeft daar een eigen mapje.
         <br> Om het logo te veranderen moet de naam van het bestand (zonder extensie) meegegeven worden als waarde voor <span>logo</span> in de JSON
         <br> Om een afbeelding in de tekst te plaatsen maak je een nieuwe string aan die begint met <span>@IMAGE-</span> gevolgd door de bestandsnaam zonder extensie. Bijvoorbeeld: <span>@IMAGE-myCat</span></p>
 
-        <img src="assets/images/imageJson.png" alt="">
+        <div class="imagegroup">
+            <img src="assets/images/opbouw/afbeelding.png" alt="">
+            <img src="assets/images/opbouw/afbeelding_result.png" alt="">
+        </div>
+
+        <h2>Een lijst toevoegen</h2>
+        <p> Een lijst toevoegen is super simpel. Net zoals bij de afbeeldingen is er een bepaald voorvoegsel dat je kan gebruiken. Voor een lijst is dit natuurlijk <span>@LIST-</span>.
+        <br> Items binnen in de lijst kan je splitsen door een tilde (<span>~</span>) met een spatie er voor en er na te gebruiken.
+        <br> Bijvoorbeeld: <span>@LIST-cat ~ dog ~ monkey ~ pig ~ lion</span></p>
+
+        <div class="imagegroup">
+            <img src="assets/images/opbouw/lijst.png" alt="">
+            <img src="assets/images/opbouw/lijst_result.png" alt="">
+        </div>
     </article>
 
 </main>

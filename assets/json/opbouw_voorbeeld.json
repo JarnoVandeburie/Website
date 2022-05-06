@@ -1,0 +1,22 @@
+[
+  {
+    "title": "De titel van het evenement",
+    "logo": "logo.png",
+    "description": "Dit is de beschrijving die je enkel ziet op de pagina met alle artikelen.",
+    "date": "01/01/1970",
+    "location": "Online",
+    "frequency": "Wekelijks",
+    "audience": "Cyber security studenten",
+    "organiser": "Howest",
+    "text": [
+        "Dit is de eerste lijn tekst.",
+        "Een tweede lijn kan je toevoegen door een nieuwe string te maken.",
+        "@LIST-Eerste item ~ Tweede item ~ Derde item ~ Vierde item ~ Vijfde item",
+        "Dit is de tekst na de lijst."
+    ],
+    "experience" : {
+      "positivePoints" : [ "Handig", "Netjes" ],
+      "negativePoints" : [ "Veel items" ]
+    }
+  }
+]

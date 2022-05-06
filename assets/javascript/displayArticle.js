@@ -7,7 +7,7 @@ function init() {
 
     document.querySelector("#pagetitle").innerHTML = title;
 
-    fetch("./artikels.json")
+    fetch("assets/json/artikels.json")
         .then(response => {
             return response.json();
         })
@@ -59,7 +59,7 @@ function generateText(textArray) {
 
         } else if (block.includes("@LIST-")) {
 
-            let items = block.split("@LIST-")[1].split("~");
+            let items = block.split("@LIST-")[1].split(" ~ ");
             output += `<ul>`;
             items.forEach(item => {
                 output += `<li>${item}</li>`;
