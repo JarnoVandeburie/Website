@@ -7,7 +7,7 @@ async function init() {
     document.querySelector("#sidebarMenu").innerHTML += `
     <ul class="sidebarMenuInner">
         <li><a href="index.html">Home</a></li>
-        <li><a href="artikels.html">Artikelen</a></li>
+        <li><a href="artikelen.html">Artikelen</a></li>
         <li><a href="opbouw.html">Opbouw site</a></li>
     </ul>
     `;

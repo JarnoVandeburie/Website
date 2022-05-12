@@ -54,8 +54,8 @@
     "audience": "RMM Gebruikers",
     "organiser": "Datto",
     "text": [
-        "Tijdens mijn eerste week stage moest ik vooral gewend worden aan de tools. Eèn van die tools is Datto RMM. Op de <a href='https://academy.datto.com' target='_blank'>academy van Datto</a> staan verschillende webinars die ik gevolgd heb. De meeste van de webinars die ik heb gevolgd waren live webinars die men opgenomen had en op de site heeft geplaatst.",
-        "De volgende webinars zijn de opnames die ik bekeken heb om vertrouwd te raken met de tool:",
+        "Tijdens mijn eerste week stage moest ik vooral gewend worden aan de tools. Eèn van die tools is Datto RMM. RMM is een tool dat het makkelijk maakt om remote de controle te nemen van toestellen.",
+        "Op de <a href='https://academy.datto.com' target='_blank'>academy van Datto</a> staan verschillende webinars die ik gevolgd heb. De meeste van de webinars die ik heb gevolgd waren live webinars die men opgenomen had en op de site heeft geplaatst.<br>De volgende webinars zijn de opnames die ik bekeken heb om vertrouwd te raken met de tool:",
         "@LIST-Intro to Monitoring ~ Monitoring Mishaps ~ Gathering Intelligence with Scripts ~ Intro to Automation with Components and Jobs ~ Third-Party Software Management ~ Efficient Monitor Management",
         "Op 17/02/2022 heb ik dan ook een semi-live webinar gevolgd over de nieuwe UI van RMM. Normaal gezien zou dit worden live gestreamd maar door enkele problemen was dit niet mogelijk. Men had de webinar op voorhand opgenomen en speelde die af. Op hetzelfde moment zaten de hosts in de chat om onze vragen te beantwoorden."
     ],

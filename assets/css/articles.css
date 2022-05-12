@@ -114,18 +114,23 @@ label[for=compact] {
     top: 85px;
     left: 10px;
     position: fixed;
+    display: flex;
     background-color: goldenrod;
-    padding: 20px;
-    font-size: 1.25rem;
     z-index: 1;
-    color: white;
-    font-weight: bold;
     border-radius: 25px;
 }
 
 #back a {
     color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
     text-decoration: none;
+}
+
+#back:hover a{
+    text-decoration: underline;
 }
 
 
