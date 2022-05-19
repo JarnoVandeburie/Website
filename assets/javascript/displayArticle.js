@@ -26,7 +26,7 @@ function loadArticle(data, title) {
             <img src="assets/images/articles/${article.logo}" alt="" id="logo">
                 <div>
                     <p>${article.date} - ${article.location}</p>
-                    <p>${article.frequency} georganiseerd door ${article.organiser} voor ${article.audience}</p>
+                    <p>${article.frequency == "" ? "Georganiseerd" : article.frequency + " georganiseerd"} door ${article.organiser} voor ${article.audience}</p>
                 </div>
             </div>
             <hr>

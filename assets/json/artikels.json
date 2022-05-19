@@ -84,20 +84,25 @@
   },
 
   {
-    "title": "HackTheBox livestream",
+    "title": "Cyber Santa is coming to town",
     "logo": "hackthebox/logo.png",
-    "description": "",
+    "description": "HackTheBox hoste rond de kerstperiode een Hacking Party met verschillende gerespecteerde securityspecialisten die spraken over de onderwerpen waar zij in gespecialiseerd zijn.",
     "date": "14/12/2021",
     "location": "Online",
     "frequency": "",
     "audience": "iedereen",
-    "organiser": "",
+    "organiser": "HackTheBox",
     "text": [
-        
+        "HackTheBox host regelmatig eens een cybersecurity evenement zoals de Cuber Apocalypse CTF die onlangs plaats vond. Ik heb in december gekozen om de kerststream te volgen op hun <a href='https://www.youtube.com/c/HackTheBox/featured'>YouTube kannaal</a>.<br>Dit jaar waren onder andere STÖK en NahamSec aan het woord, zij organiseerden ook NahamCon, alsook de Belgische PinkDraconian die uitleg gaf over PWN & Reverse egineering.",
+        "STÖK legde een deel rond Bug Bounties uit dit boeiede mij het meest van alle onderwerpen. Het was ook al zeer snel duidelijk dat het niet de eerste keer was dat hij presenteerde en demonstreerde. Er waren een aantal specialisten die nog niet zo vaak in de spotlight stonden maar dat maakte hun onderwerp zeker niet minder interessant.",
+        "De livestream bevatte natuurlijk meer dan alleen deze 2 onderwerpen, namelijk:",
+        "@LIST-Bug Bounties ~ PWN & Reverse Engineering ~ Web Exploitation ~ Web & Crypto ~ Forensics ~ Volatility 3",
+        "Er waren ook zeer veel demo's die goed uitgewerkt waren. Dankzij deze demo's was de stream makkelijk te volgen en helemaal niet saai.",
+        "@IMAGE-hackthebox/demo.png"
     ],
     "experience" : {
-      "positivePoints" : [ "Later bekijkbaar" ],
-      "negativePoints" : [ "Duurt lang" ]
+      "positivePoints" : [ "Later bekijkbaar", "Veel demo's", "Goed georganiseerd" ],
+      "negativePoints" : [ "Veel informatie" ]
     }
   }
 
