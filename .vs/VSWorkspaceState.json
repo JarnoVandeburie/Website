@@ -3,10 +3,12 @@
     "",
     "\\assets",
     "\\assets\\css",
+    "\\assets\\images",
     "\\assets\\images\\articles",
+    "\\assets\\images\\articles\\ceh",
     "\\assets\\javascript",
     "\\assets\\json"
   ],
-  "SelectedNode": "\\assets\\images",
+  "SelectedNode": "\\assets\\images\\articles\\ceh\\logo.png",
   "PreviewInSolutionExplorer": false
 }
