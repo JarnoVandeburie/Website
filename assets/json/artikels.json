@@ -13,7 +13,7 @@
       "@IMAGE-hackthefuture/lobby.png",
       "We kregen verschillende challenges voorgeschoteld en onze opdracht was om code te schrijven om deze op te lossen. Als we deze juist oplosten kregen we een tip naar de moordenaar/moordenares van Jill Bridges. We besloten om elke opdracht in een aparte klasse te maken zodat alles leesbaar bleef. Uiteindelijk hebben we bijna alle opdrachten tot een goed einde kunnen brengen, of dat dachten we toch. Uiteindelijk beleek één of meerdere opdrachten een foutje te bevatten en dus gaven ze een verkeerde tip als uitkomst.",
       "Om 16u begonnen de pitches. Elke groep kwam aan bod en vertelde over hun ervaring en resultaat. Er waren zowel groepen die wat moeite hadden om de opdrachten te voltooien, als groepen die een geweldige dag achter de rug hadden. Een groep dat mij zeker bij blijft had een programma geschreven die alle info uit de API haalde, de tips berekende en de juiste dader aan het licht bracht. Natuurlijk hadden Damier en ik hier ook aan gedacht maar wij dachten dat dit een helse taak was om te doen in 5 uur tijd. Mijn mond viel wel even open toen zij hun programma presenteerden.",
-      "Uiteindelijk, om 18u30, kwam dan de prijsuitrijking. Uit alle categorieën werd een winnaar en een groepsfavoriet gekozen. Tot niemands verbazing won de eerder beschreven groep in onze categorie. Een paar dagen later kregen wij een mail met ons resultaat. We eindigde op de XXde plaats van de XX groepen. Uitendelijk kregen we nog een goodiebag met allerlei leuke spulletjes."
+      "Uiteindelijk, om 18u30, kwam dan de prijsuitrijking. Uit alle categorieën werd een winnaar en een groepsfavoriet gekozen. Tot niemands verbazing won de eerder beschreven groep in onze categorie. Een paar dagen later kregen wij een mail met ons resultaat. We eindigde op de 7de plaats van de 15 groepen. Uitendelijk kregen we nog een goodiebag met allerlei leuke spulletjes."
     ],
     "experience" : {
       "positivePoints" : ["Competetief", "Leerrijk", "Uitdagend"],
@@ -68,18 +68,20 @@
   {
     "title": "CEH Examen",
     "logo": "ceh/logo.png",
-    "description": "",
-    "date": "25/02/2022",
-    "location": "Online",
+    "description": "Het CEH Certificaat toont aan dat je kennis hebt van beveiliging van computersystemen. Dit is een zwaar examen die ons werd aangeboden door Howest.",
+    "date": "15/04/2022",
+    "location": "Howest Brugge",
     "frequency": "",
     "audience": "iedereen met minstens 2 jaar ervaring in Information Security",
     "organiser": "EC-Council",
     "text": [
-        
+		"In het vierde semester boodt Howest ons aan om mee te doen met het Certified Ethical Hacker examen aan een verlaagde prijs. Na wat twijfelen accepteerde ik het voorstel.",
+		"Het CEH examen is een zeer zwaar examen aangeboden door EC-Council, maar sommigen die er over spreken op het social media platform Reddit vonden het super gemakkelijk. Ikzelf sluit mij aan bij de meeste comments. Velen zeggen dat het te duur is en dat EC-Council een slechte reputatie heeft. Het wordt enkel aanbevolen als je bedrijf er voor betaalt en het nodig is voor je job.",
+		"Als je het iets objectiever bekijkt zie je ook dat de cursus redelijk groot is. Het is een curus van 2000 A4-pagina's theorie, deze moest ik leren voor het theorie examen, en 2000 A4-pagina's labo's. Het is mij jammer genoeg niet gelukt om het examen succesvol te voltooien. De drempel van 98 op 125 punten, wat overeenkomt met ongeveer 80 procent, was voor mij wat te hoog."
     ],
     "experience" : {
-      "positivePoints" : [],
-      "negativePoints" : []
+      "positivePoints" : ["Duidelijk afbeeldingen", "Animaties ter illustratie" ],
+      "negativePoints" : ["Zeer veel informatie", "Hoge drempel"]
     }
   },
 
@@ -93,7 +95,7 @@
     "audience": "iedereen",
     "organiser": "HackTheBox",
     "text": [
-        "HackTheBox host regelmatig eens een cybersecurity evenement zoals de Cuber Apocalypse CTF die onlangs plaats vond. Ik heb in december gekozen om de kerststream te volgen op hun <a href='https://www.youtube.com/c/HackTheBox/featured'>YouTube kannaal</a>.<br>Dit jaar waren onder andere STÖK en NahamSec aan het woord, zij organiseerden ook NahamCon, alsook de Belgische PinkDraconian die uitleg gaf over PWN & Reverse egineering.",
+        "HackTheBox host regelmatig eens een cybersecurity evenement zoals de Cyber Apocalypse CTF die onlangs plaats vond. Ik heb in december gekozen om de kerststream te volgen op hun <a href='https://www.youtube.com/c/HackTheBox/featured'>YouTube kannaal</a>.<br>Dit jaar waren onder andere STÖK en NahamSec aan het woord, zij organiseerden ook NahamCon, alsook de Belgische PinkDraconian die uitleg gaf over PWN & Reverse egineering.",
         "STÖK legde een deel rond Bug Bounties uit dit boeiede mij het meest van alle onderwerpen. Het was ook al zeer snel duidelijk dat het niet de eerste keer was dat hij presenteerde en demonstreerde. Er waren een aantal specialisten die nog niet zo vaak in de spotlight stonden maar dat maakte hun onderwerp zeker niet minder interessant.",
         "De livestream bevatte natuurlijk meer dan alleen deze 2 onderwerpen, namelijk:",
         "@LIST-Bug Bounties ~ PWN & Reverse Engineering ~ Web Exploitation ~ Web & Crypto ~ Forensics ~ Volatility 3",

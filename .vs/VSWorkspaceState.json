@@ -3,9 +3,10 @@
     "",
     "\\assets",
     "\\assets\\css",
+    "\\assets\\images\\articles",
     "\\assets\\javascript",
     "\\assets\\json"
   ],
-  "SelectedNode": "\\assets\\css\\articles.css",
+  "SelectedNode": "\\assets\\images",
   "PreviewInSolutionExplorer": false
 }
