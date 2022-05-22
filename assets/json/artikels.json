@@ -9,11 +9,11 @@
     "audience": "hackers en creative studenten",
     "organiser": "HackTheFuture",
     "text": [
-      "Samen met Damier Claeys vormde ik het team <i>placeholder</i>. Onze eerste keuze was om mee te doen met de Security escape room, maar deze was helaas al volzet en dus hebben we mee gedaan met onze tweede keuze, Java/Backend Development. Dit was voor ons een klein beetje een uitdaging want het was al anderhalf jaar geleden dat we nog eens een hele dag Java hadden gedaan, maar toch begonnen we met volle moed.",
+      "Samen met <a href='damierclaeys.be'>Damier Claeys</a> vormde ik het team <i>placeholder</i>. Onze eerste keuze was om mee te doen met de Security escape room, maar deze was helaas al volzet en dus hebben we mee gedaan met onze tweede keuze, Java/Backend Development. Dit was voor ons een klein beetje een uitdaging want het was al anderhalf jaar geleden dat we nog eens een hele dag Java hadden gedaan, maar toch begonnen we met volle moed.",
       "@IMAGE-hackthefuture/lobby.png",
       "We kregen verschillende challenges voorgeschoteld en onze opdracht was om code te schrijven om deze op te lossen. Als we deze juist oplosten kregen we een tip naar de moordenaar/moordenares van Jill Bridges. We besloten om elke opdracht in een aparte klasse te maken zodat alles leesbaar bleef. Uiteindelijk hebben we bijna alle opdrachten tot een goed einde kunnen brengen, of dat dachten we toch. Uiteindelijk beleek één of meerdere opdrachten een foutje te bevatten en dus gaven ze een verkeerde tip als uitkomst.",
       "Om 16u begonnen de pitches. Elke groep kwam aan bod en vertelde over hun ervaring en resultaat. Er waren zowel groepen die wat moeite hadden om de opdrachten te voltooien, als groepen die een geweldige dag achter de rug hadden. Een groep dat mij zeker bij blijft had een programma geschreven die alle info uit de API haalde, de tips berekende en de juiste dader aan het licht bracht. Natuurlijk hadden Damier en ik hier ook aan gedacht maar wij dachten dat dit een helse taak was om te doen in 5 uur tijd. Mijn mond viel wel even open toen zij hun programma presenteerden.",
-      "Uiteindelijk, om 18u30, kwam dan de prijsuitrijking. Uit alle categorieën werd een winnaar en een groepsfavoriet gekozen. Tot niemands verbazing won de eerder beschreven groep in onze categorie. Een paar dagen later kregen wij een mail met ons resultaat. We eindigde op de 7de plaats van de 15 groepen. Uitendelijk kregen we nog een goodiebag met allerlei leuke spulletjes."
+      "Uiteindelijk, om 18u30, kwam dan de prijsuitrijking. Uit alle categorieën werd een winnaar en een groepsfavoriet gekozen. Tot niemands verbazing won de eerder beschreven groep in onze categorie. Een paar dagen later kregen wij een mail met ons resultaat. We eindigde op de 7de plaats van de 13 groepen. Uitendelijk kregen we nog een goodiebag met allerlei leuke spulletjes."
     ],
     "experience" : {
       "positivePoints" : ["Competetief", "Leerrijk", "Uitdagend"],
@@ -31,7 +31,7 @@
     "audience": "iedereen",
     "organiser": "STÖK, John Hammond en NahamSec",
     "text": [
-        "Het event duurde 48u en liep van donderdag 28 april 22:00 tot zaterdag 30 april 22:00. Omdat wij nog stage hadden, konden wij enkel de zaterdag mee doen. Met 'wij' bedoel ik Damier Claeys en mezelf. Opnieuw vormden wij het duo met de naam <i>placeholder</i>.",
+        "Het event duurde 48u en liep van donderdag 28 april 22:00 tot zaterdag 30 april 22:00. Omdat wij nog stage hadden, konden wij enkel de zaterdag mee doen. Met 'wij' bedoel ik <a href='damierclaeys.be'>Damier Claeys</a> en mezelf. Opnieuw vormden wij het duo met de naam <i>placeholder</i>.",
         "Elke challenge was gecategoriseerd in een van volgende types.",
         "@LIST-Warmups ~ Web ~ Binary Exploitation ~ Reverse Engineering ~ Cryptography ~ Forensics ~ Mobile ~ DevOps ~ Hardware/RF ~ Malware ~ Miscellaneous ~ Networking ~ Scripting ~ Steganography ~ OSINT",
         "Niet elk type ging even vlot bij ons. We hebben vooral warmups en OSINT challenges kunnen oplossen, maar dat was niet altijd door een gebrek aan kennis. Er zaten vaak addertjes onder het gras.<br>Zo was er een challenge waarbij de verstreken tijd gevraagd werd van een persoon die heen en weer vloog tussen Samoa en Amerikaans Samoa op 31 december 2011. Dit leek ons een makkelijke opdracht en dat was het ook, deze lostten we op in een kwartiertje. Of dat dachten we toch. 30 December 2011 bestond niet in Samoa en Samoa volgt het zomer- en winteruur, Amerikaans Samoa niet.",
