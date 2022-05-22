@@ -1,0 +1,23 @@
+main {
+    width: 70%;
+}
+
+article {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+object {
+    margin-top: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    height: 90vh;
+}
+
+#btn-ucdp {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}

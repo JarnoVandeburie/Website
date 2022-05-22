@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/general.css"/>
+    <link rel="stylesheet" href="assets/css/ucdp.css"/>
+    <link rel="stylesheet" href="assets/css/filtermenu.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+<body>
+
+<header>
+    <div>
+        <div class="filtermenu"></div>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+        </div>
+    </div>
+
+    <p>UCDP</p>
+    <p><a href="index.html">Jarno Vandeburie</a></p>
+</header>
+
+<main>
+    <article>
+        <p>In het document hieronder vindt u mijn paper over Perlin Noise. Deze paper heb ik gemaakt voor het vak Professional Networking voor de opdracht 'maak een UCDP aan de hand van een zelfgekozen onderwerp'.</p>
+        <p>Omdat ik in mijn vrije tijd vaak bezig ben met het spelen en soms ook maken van games, had ik al interesse over hoe games hun terein genereren. Ik heb dit dan opgezocht en het bleek dat dit mogelijk was door het genereren van een Perlin Noise map.</p>
+        <p>Deze paper legt dus stap voor stap uit hoe je een Perlin Noise map kan laten genereren in de game enigne Unity.</p>
+
+        <a href="/assets/UCDP.pdf" download="Paper Perlin Noise"><button class="btn-ucdp" id="btn-ucdp"><i class="fa fa-download"></i> Download</button></a>
+
+        <object data="/assets/UCDP.pdf#view=FitV"></object>
+
+    </article>
+
+</main>
+
+<script src="assets/javascript/generateSidebarMenu.js"></script>
+<script src="assets/javascript/ucdpDownload.js"></script>
+<script src="assets/javaScript/require.js"></script>
+</body>
+</html>

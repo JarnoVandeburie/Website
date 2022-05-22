@@ -9,6 +9,7 @@ async function init() {
         <li><a href="index.html">Home</a></li>
         <li><a href="artikelen.html">Artikelen</a></li>
         <li><a href="opbouw.html">Opbouw site</a></li>
+        <li><a href="ucdp.html">UCDP</a></li>
     </ul>
     `;
 
