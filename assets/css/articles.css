@@ -153,7 +153,6 @@ label[for=compact] {
 @media only screen and (max-width: 600px) {
     article:not(.compact) .logo {
         margin-top: 10px;
-        transform: translateY(0);
         display: block;
         float: left;
         position: relative;
