@@ -1,147 +1,150 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 125px 20px 0 20px;
-    background-color: #F5F5F5;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 125px 20px 0 20px;
+  background-color: #f5f5f5;
 }
 
 a {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 code {
-    background-color: #CCC;
-    padding: 2px 5px;
-    border-radius: 5px;
+  background-color: #ccc;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 
 li {
-    list-style-type: initial;
-    margin-left: 18px;
+  list-style-type: initial;
+  margin-left: 18px;
 }
 
 main p {
-    line-height: 1.3rem;
+  line-height: 1.3rem;
 }
 
 h2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 h3 {
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 main {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-article, form{
-    border-radius: 30px;
+article,
+form {
+  border-radius: 30px;
 }
 
 article {
-    background-color: #EAEAEA;
-    margin-bottom: 50px;
-    padding: 0 40px 0 40px;
-    position: relative;
+  background-color: #eaeaea;
+  margin-bottom: 50px;
+  padding: 0 40px 0 40px;
+  position: relative;
 }
 
 article h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 header {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    position: fixed;
-    background-color: goldenrod;
-    line-height: 75px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    text-transform: uppercase;
-    z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  position: fixed;
+  background-color: #00cccc;
+  line-height: 75px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-transform: uppercase;
+  z-index: 2;
 }
 
 header > * {
-    width: 33.3%;
+  width: 33.3%;
 }
 
 header > p > a {
-    color: white;
-    text-decoration: none;
-    text-transform: none;
-    float: right;
-    padding-right: 30px;
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+  float: right;
+  padding-right: 30px;
 }
 
 header > a {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 header > p {
-    text-align: center;
-    margin: 0;
-    font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
-label, form > div {
-    display: inline-block;
+label,
+form > div {
+  display: inline-block;
 }
 
 input {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 form {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 header > div {
-    display: inline-block;
+  display: inline-block;
 }
 
 header > div:last-child {
-    float: right;
-    padding-right: 20px;
+  float: right;
+  padding-right: 20px;
 }
 
 p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 span {
-    font-style: italic;
-    font-weight: bold;
+  font-style: italic;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 700px) {
-    header > a, header > p {
-        font-size: 1rem;
-    }
+  header > a,
+  header > p {
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width: 450px) {
-    header > div {
-        width: 10%;
-    }
+  header > div {
+    width: 10%;
+  }
 
-    header {
-        justify-content: space-between;
-    }
+  header {
+    justify-content: space-between;
+  }
 
-    header > a {
-        margin-right: 0;
-        padding: 0;
-        width: 50%;
-    }
+  header > a {
+    margin-right: 0;
+    padding: 0;
+    width: 50%;
+  }
 }
