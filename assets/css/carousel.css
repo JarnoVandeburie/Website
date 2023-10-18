@@ -1,0 +1,47 @@
+.carousel {
+  position: relative;
+  height: fit-content;
+  max-height: 800px;
+  margin-top: 20px;
+}
+
+.carousel .carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+}
+
+.carousel-buttons {
+  position: absolute;
+  bottom: 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.carousel-buttons p {
+  margin: 0 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.carousel button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel button img {
+  width: 40px !important;
+}
+
+.carousel .prev {
+  left: 20px;
+}
+.carousel .next {
+  right: 20px;
+}
