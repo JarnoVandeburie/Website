@@ -1,11 +1,14 @@
+@use "utilities/colors.scss";
 .topText {
   position: relative;
-}
-.topText p {
-  width: 75%;
-}
-.topText .topText div {
-  width: 90%;
+
+  p {
+    width: 75%;
+  }
+
+  .topText div {
+    width: 90%;
+  }
 }
 
 #articles .topText {
@@ -30,22 +33,26 @@ article img,
   margin-bottom: 0px;
 }
 
-.description li {
-  margin-top: 5px;
-}
-.description img {
-  max-width: 100%;
+.description {
+  li {
+    margin-top: 5px;
+  }
+  img {
+    max-width: 100%;
+  }
 }
 
 .experience {
   margin-top: 20px;
   display: flex;
-}
-.experience > div:first-child {
-  margin-right: 30px;
-}
-.experience li {
-  margin-bottom: 5px;
+
+  > div:first-child {
+    margin-right: 30px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
 }
 
 .logo {
@@ -59,12 +66,13 @@ article img,
   position: absolute;
   display: flex;
   justify-content: center;
-}
-.logo img {
-  margin: 0;
-  position: relative;
-  max-height: 90px;
-  max-width: 90%;
+
+  img {
+    margin: 0;
+    position: relative;
+    max-height: 90px;
+    max-width: 90%;
+  }
 }
 
 #article #logo {
@@ -82,7 +90,7 @@ article img,
   text-decoration: none;
 }
 
-label[for=compact] {
+label[for="compact"] {
   font-weight: bold;
   margin-left: 20px;
   margin-bottom: 20px;
@@ -102,7 +110,7 @@ label[for=compact] {
 }
 
 #compact:checked {
-  background-color: #00cccc;
+  background-color: colors.$main_color;
   border: none;
 }
 
@@ -111,17 +119,18 @@ label[for=compact] {
   left: 10px;
   position: fixed;
   display: flex;
-  background-color: #00cccc;
+  background-color: colors.$main_color;
   z-index: 1;
   border-radius: 25px;
-}
-#back a {
-  color: white;
-  font-size: 1.25rem;
-  font-weight: bold;
-  padding: 20px;
-  color: white;
-  text-decoration: none;
+
+  a {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+  }
 }
 
 #back:hover a {
@@ -130,15 +139,18 @@ label[for=compact] {
 
 .compact {
   margin-bottom: 10px;
-}
-.compact h1 {
-  font-size: 1.5rem;
-}
-.compact > div > div {
-  display: none;
-}
-.compact .logo {
-  display: none;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  > div > div {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -151,16 +163,18 @@ label[for=compact] {
     max-width: unset;
     max-height: 75px;
   }
-  .topText div {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    padding-top: 0;
-  }
-  .topText p {
-    width: 100%;
-    margin: 20px 0 0 0;
+
+  .topText {
+    div {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+      padding-top: 0;
+    }
+
+    p {
+      width: 100%;
+      margin: 20px 0 0 0;
+    }
   }
 }
-
-/*# sourceMappingURL=articles.css.map */

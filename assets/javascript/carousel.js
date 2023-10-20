@@ -49,7 +49,7 @@ function updateCarousel(carousel) {
   carousel.querySelector(".carousel-buttons p").innerText = parseInt(carousel.getAttribute("data-id")) + 1 + " / " + carousel.querySelectorAll(".carousel-item").length;
   carousel.querySelectorAll(".carousel-item").forEach((image, index) => {
     if (index === parseInt(carousel.getAttribute("data-id"))) {
-      image.style.display = "block";
+      image.style.display = "inherit";
     } else {
       image.style.display = "none";
     }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/general.css" />
-    <link rel="stylesheet" href="assets/css/filtermenu.css" />
+    <link rel="stylesheet" href="assets/css/sidemenu.css" />
     <link rel="stylesheet" href="assets/css/endare.css" />
     <link rel="stylesheet" href="assets/css/carousel.css" />
     <title>Endare</title>
@@ -15,16 +15,7 @@
 <body>
 
     <header>
-        <div>
-            <div class="filtermenu"></div>
-            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-            <label for="openSidebarMenu" class="sidebarIconToggle">
-                <div class="spinner diagonal part-1"></div>
-                <div class="spinner horizontal"></div>
-                <div class="spinner diagonal part-2"></div>
-            </label>
-            <div id="sidebarMenu">
-            </div>
+        <div class="sidebar">
         </div>
 
         <p><a href="index.html">Jarno Vandeburie</a></p>
@@ -63,7 +54,7 @@
                                 </p>
                             </div>
 
-                            <img id="chatbot-img1" src="assets/images/stage_endare/chatbot.png">
+                            <img id="chatbot-img1" src="assets/images/stage_endare/chatbot/email.png">
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -75,9 +66,27 @@
                                 met mediaqueries.</p>
                         </div>
                         <div class="horizontal-spread">
-                            <img src="assets/images/stage_endare/chatbot_resolutie2.PNG" width="1000">
-                            <img src="assets/images/stage_endare/chatbot_resolutie1.PNG" height="700">
+                            <img src="assets/images/stage_endare/chatbot/resolutie2.png" width="1000">
+                            <img src="assets/images/stage_endare/chatbot/resolutie1.png" height="700">
                         </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <h2>Grootste uitdagingen</h2>
+                            <p>Wanneer de user of de ai een bericht stuurt, dan moet er automatisch gescrold worden.
+                                Wanneer de ai een antwoord aan het typen is, dan wordt de tekst geleidelijk getoond en
+                                moet er dus steeds gescrold worden wanneer het tekstvak vergroot.</p>
+                            <p>De oplossing hiervoor waren observers.<br>
+                                Wanneer een bericht wordt toegevoegd aan de container "messages", dan wordt dat
+                                gedetecteerd door een MutationObserver. Deze scrolt dan helemaal naar het einde van de
+                                container. <br>
+                                Maar ook wordt er een ResizeObserver gelinkt aan het nieuwe bericht. Wanneer
+                                het bericht groter wordt, dan wordt er automatisch naar beneden gescrold.<br>
+                                Deze ResizeObserver heeft er ook voor gezorgd dat als je het venster verkleint of
+                                vergroot, dat er automatisch naar beneden gescrold wordt.
+                            </p>
+                        </div>
+                        <img src="assets/images/stage_endare/chatbot/code_snippet_observers.png" height="600">
                     </div>
                 </div>
             </div>
@@ -101,8 +110,11 @@
                                 </p>
                             </div>
 
-                            <img src="assets/images/stage_endare/chatbot.png">
                         </div>
+
+                        <img src="assets/images/stage_endare/chatbot/code_snippet_observers.png" height="600">
+                        <img src="assets/images/stage_endare/chatbot/code_snippet_observers.png" height="600">
+
                     </div>
                 </div>
             </div>
@@ -111,8 +123,9 @@
     </main>
 </body>
 
-<script src="assets/javascript/generateSidebarMenu.js"></script>
+<script src="assets/javascript/sidemenu.js"></script>
 <script src="assets/javascript/require.js"></script>
 <script src="assets/javascript/carousel.js"></script>
+<script src="assets/javascript/endare.js"></script>
 
 </html>

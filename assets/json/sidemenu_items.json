@@ -1,0 +1,32 @@
+[
+  {
+    "pagename": "index",
+    "title": "Home",
+    "image": "home.svg",
+    "display": true
+  },
+  {
+    "pagename": "endare",
+    "title": "Stage Endare",
+    "image": "internship.svg",
+    "display": true
+  },
+  {
+    "pagename": "ucdp",
+    "title": "Paper Perlin Noise",
+    "image": "research.svg",
+    "display": true
+  },
+  {
+    "pagename": "artikelen",
+    "title": "Artikelen",
+    "image": "article.svg",
+    "display": true
+  },
+  {
+    "pagename": "opbouw",
+    "title": "Opbouw Website",
+    "image": "mechanic-tools.svg",
+    "display": false
+  }
+]

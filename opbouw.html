@@ -1,94 +1,123 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/reset.css"/>
-    <link rel="stylesheet" href="assets/css/general.css"/>
-    <link rel="stylesheet" href="assets/css/opbouw.css"/>
-    <link rel="stylesheet" href="assets/css/filtermenu.css"/>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/general.css" />
+    <link rel="stylesheet" href="assets/css/opbouw.css" />
+    <link rel="stylesheet" href="assets/css/sidemenu.css" />
     <title>Home</title>
 </head>
+
 <body>
 
-<header>
-    <div>
-        <div class="filtermenu"></div>
-        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-        <label for="openSidebarMenu" class="sidebarIconToggle">
-            <div class="spinner diagonal part-1"></div>
-            <div class="spinner horizontal"></div>
-            <div class="spinner diagonal part-2"></div>
-        </label>
-        <div id="sidebarMenu">
-        </div>
-    </div>
-
-    <p>Opbouw site</p>
-    <p><a href="index.html">Jarno Vandeburie</a></p>
-</header>
-
-<main>
-    <article>
-        <h1>Gebruikte technieken</h1>
-        <h2>HTML5 en CSS</h2>
-        <p>De pagina is gebouwd met HTML5 en CSS met in totaal 4 HTML-files: Home, alle artikelen, info over een artikel en de opbouw van de website.
-        <br> Doordat de artikelen dynamisch worden ingeladen, is er geen nood om voor elk artikel een nieuwe HTML-file aan te maken.</p>
-        <p>De CSS wordt altijd gereset met behulp van een bestandje genaamd <span>reset.css</span>. Dit is een universeel bestand en maakt het gemakkelijker om stijlen aan te passen zonder te botsen op de automatische stijl die gegenereerd wordt.</p>
-
-        <h2>JavaScript</h2>
-        <p>Het navigatiemenu wordt gegenereerd aan de hand van JavaScript. Dit is gedaan zodat het makkelijker is om nieuwe paginas toe te voegen. Zo moet er niet in elke HTML-file de header worden aangepast.</p>
-        <p>Ook het genereren van de artikelen gebeurt aan de hand van JavaScript. De artikelen worden gelezen uit een file waar ze opgeslagen staan in een JSON-formaat. De code overleest elk element en plaatst deze op de juiste plaats in het artikel. De afbeeldingen worden ook uit de file uitgelezen en dan uit een folder gehaald.
-        <br>Een kleine extra is dat er ook een optie is om de artikelen compact weer te geven. Deze knop geeft alle artikelen een klasse waardoor sommige elementen verborgen worden.</p>
-        <p>Om het juiste artikel weer te geven als je op een titel klikt, wordt de titel als parameter meegegeven in de URL en wordt dan in de JSON naar het juiste artikel gezocht. Zodat de parameter wat leesbaarder zou worden voor de eindgebruiker, worden alle spaties vervangen door een tilde. Dit zorgt er voor dat dit teken niet mag gebruikt worden in de titel van een artikel, maar dat leek mij geen probleem.</p>
-
-        <h2>JSON</h2>
-        <p>Zoals aangehaald in het hoofdstukje hierboven, wordt er gebruik gemaakt van JSON om de artikelen in te lezen. Alle belangrijke elementen hebben hun eigen parameters. Er is ook een optie voor een beschrijving toe te voegen aan de artikelen. Dit is een samenvatting van het artikel en dit wordt alleen weergegeven op het scherm met alle artikelen.</p>
-        <p><i>Waarom op deze manier?</i><br>Ik heb gekozen voor een JSON-bestand omdat ik een manier wou kiezen die ook eenvoudig is voor niet-ITers. Als iemand mij zou vragen hoe zij het best dit kunnen implementeren op hun webiste, dan moeten ze geen HTML leren maar kunnen ze gewoon de tekst in het JSON-bestand toevoegen.</p>
-
-        <h2>Hosting</h2>
-        <p>Deze website is online toegankelijk met behulp van GitHub. Nadat ik een deel van de site heb toegevoegd of bijgewerkt stuur ik de code naar mijn GitHub repository. GitHub update dan automatisch de getoonde website.
-        <br>Tijdens het bewerken gebruikte ik <code>py -m http.server</code> om lokaal een website te hosten. Zo moest ik niet na elke kleine aanpassing de code op GitHub plaatsen om de veranderingen te zien. Dit was nodig omdat ik de artikelen anders niet kon lezen.
-        <img src="assets/images/opbouw/error.PNG" alt="">
-    </article>
-
-    <article>
-        <h1>Nieuw artikel toevoegen</h1>
-        <h2>Tekst toevoegen</h2>
-        <p>Het toevoegen van tekst aan een artikel is heel simpel.
-            <br> Doordat er gebruikt gemaakt wordt van JSON, kan een nieuw artikel toegevoegd worden in <span>artikels.json</span> door middel van het dupliceren van een vorig item en daarna de eigenschappen in te vullen.</p>
-
-        <div class="imagegroup">
-            <img src="assets/images/opbouw/tekst.PNG" alt="">
-            <img src="assets/images/opbouw/tekst_result.PNG" alt="">
+    <header>
+        <div class="sidebar">
         </div>
 
-        <h2>Afbeeldingen toevoegen</h2>
-        <p>Alle gebruikte afbeeldingen in verband met de artikelen moeten in de folder <span>assets/images/articles</span> komen. Elk artikel heeft daar een eigen mapje.
-        <br> Om het logo te veranderen moet de naam van het bestand (zonder extensie) meegegeven worden als waarde voor <span>logo</span> in de JSON
-        <br> Om een afbeelding in de tekst te plaatsen maak je een nieuwe string aan die begint met <span>@IMAGE-</span> gevolgd door de bestandsnaam zonder extensie. Bijvoorbeeld: <span>@IMAGE-myCat</span></p>
+        <p>Opbouw site</p>
+        <p><a href="index.html">Jarno Vandeburie</a></p>
+    </header>
 
-        <div class="imagegroup">
-            <img src="assets/images/opbouw/afbeelding.PNG" alt="">
-            <img src="assets/images/opbouw/afbeelding_result.PNG" alt="">
-        </div>
+    <main>
+        <article>
+            <h1>Gebruikte technieken</h1>
+            <h2>HTML5 en CSS</h2>
+            <p>De pagina is gebouwd met HTML5 en CSS met in totaal 4 HTML-files: Home, alle artikelen, info over een
+                artikel en de opbouw van de website.
+                <br> Doordat de artikelen dynamisch worden ingeladen, is er geen nood om voor elk artikel een nieuwe
+                HTML-file aan te maken.
+            </p>
+            <p>De CSS wordt altijd gereset met behulp van een bestandje genaamd <span>reset.css</span>. Dit is een
+                universeel bestand en maakt het gemakkelijker om stijlen aan te passen zonder te botsen op de
+                automatische stijl die gegenereerd wordt.</p>
 
-        <h2>Een lijst toevoegen</h2>
-        <p> Een lijst toevoegen is super simpel. Net zoals bij de afbeeldingen is er een bepaald voorvoegsel dat je kan gebruiken. Voor een lijst is dit natuurlijk <span>@LIST-</span>.
-        <br> Items binnen in de lijst kan je splitsen door een tilde (<span>~</span>) met een spatie er voor en er na te gebruiken.
-        <br> Bijvoorbeeld: <span>@LIST-cat ~ dog ~ monkey ~ pig ~ lion</span></p>
+            <h2>JavaScript</h2>
+            <p>Het navigatiemenu wordt gegenereerd aan de hand van JavaScript. Dit is gedaan zodat het makkelijker is om
+                nieuwe paginas toe te voegen. Zo moet er niet in elke HTML-file de header worden aangepast.</p>
+            <p>Ook het genereren van de artikelen gebeurt aan de hand van JavaScript. De artikelen worden gelezen uit
+                een file waar ze opgeslagen staan in een JSON-formaat. De code overleest elk element en plaatst deze op
+                de juiste plaats in het artikel. De afbeeldingen worden ook uit de file uitgelezen en dan uit een folder
+                gehaald.
+                <br>Een kleine extra is dat er ook een optie is om de artikelen compact weer te geven. Deze knop geeft
+                alle artikelen een klasse waardoor sommige elementen verborgen worden.
+            </p>
+            <p>Om het juiste artikel weer te geven als je op een titel klikt, wordt de titel als parameter meegegeven in
+                de URL en wordt dan in de JSON naar het juiste artikel gezocht. Zodat de parameter wat leesbaarder zou
+                worden voor de eindgebruiker, worden alle spaties vervangen door een tilde. Dit zorgt er voor dat dit
+                teken niet mag gebruikt worden in de titel van een artikel, maar dat leek mij geen probleem.</p>
 
-        <div class="imagegroup">
-            <img src="assets/images/opbouw/lijst.PNG" alt="">
-            <img src="assets/images/opbouw/lijst_result.PNG" alt="">
-        </div>
-    </article>
+            <h2>JSON</h2>
+            <p>Zoals aangehaald in het hoofdstukje hierboven, wordt er gebruik gemaakt van JSON om de artikelen in te
+                lezen. Alle belangrijke elementen hebben hun eigen parameters. Er is ook een optie voor een beschrijving
+                toe te voegen aan de artikelen. Dit is een samenvatting van het artikel en dit wordt alleen weergegeven
+                op het scherm met alle artikelen.</p>
+            <p><i>Waarom op deze manier?</i><br>Ik heb gekozen voor een JSON-bestand omdat ik een manier wou kiezen die
+                ook eenvoudig is voor niet-ITers. Als iemand mij zou vragen hoe zij het best dit kunnen implementeren op
+                hun webiste, dan moeten ze geen HTML leren maar kunnen ze gewoon de tekst in het JSON-bestand toevoegen.
+            </p>
 
-</main>
+            <h2>Hosting</h2>
+            <p>Deze website is online toegankelijk met behulp van GitHub. Nadat ik een deel van de site heb toegevoegd
+                of bijgewerkt stuur ik de code naar mijn GitHub repository. GitHub update dan automatisch de getoonde
+                website.
+                <br>Tijdens het bewerken gebruikte ik <code>py -m http.server</code> om lokaal een website te hosten. Zo
+                moest ik niet na elke kleine aanpassing de code op GitHub plaatsen om de veranderingen te zien. Dit was
+                nodig omdat ik de artikelen anders niet kon lezen.
+                <img src="assets/images/opbouw/error.PNG" alt="">
+        </article>
 
-<script src="assets/javascript/generateSidebarMenu.js"></script>
-<script src="assets/javaScript/require.js"></script>
+        <article>
+            <h1>Nieuw artikel toevoegen</h1>
+            <h2>Tekst toevoegen</h2>
+            <p>Het toevoegen van tekst aan een artikel is heel simpel.
+                <br> Doordat er gebruikt gemaakt wordt van JSON, kan een nieuw artikel toegevoegd worden in
+                <span>artikels.json</span> door middel van het dupliceren van een vorig item en daarna de eigenschappen
+                in te vullen.
+            </p>
+
+            <div class="imagegroup">
+                <img src="assets/images/opbouw/tekst.PNG" alt="">
+                <img src="assets/images/opbouw/tekst_result.PNG" alt="">
+            </div>
+
+            <h2>Afbeeldingen toevoegen</h2>
+            <p>Alle gebruikte afbeeldingen in verband met de artikelen moeten in de folder
+                <span>assets/images/articles</span> komen. Elk artikel heeft daar een eigen mapje.
+                <br> Om het logo te veranderen moet de naam van het bestand (zonder extensie) meegegeven worden als
+                waarde voor <span>logo</span> in de JSON
+                <br> Om een afbeelding in de tekst te plaatsen maak je een nieuwe string aan die begint met
+                <span>@IMAGE-</span> gevolgd door de bestandsnaam zonder extensie. Bijvoorbeeld:
+                <span>@IMAGE-myCat</span>
+            </p>
+
+            <div class="imagegroup">
+                <img src="assets/images/opbouw/afbeelding.PNG" alt="">
+                <img src="assets/images/opbouw/afbeelding_result.PNG" alt="">
+            </div>
+
+            <h2>Een lijst toevoegen</h2>
+            <p> Een lijst toevoegen is super simpel. Net zoals bij de afbeeldingen is er een bepaald voorvoegsel dat je
+                kan gebruiken. Voor een lijst is dit natuurlijk <span>@LIST-</span>.
+                <br> Items binnen in de lijst kan je splitsen door een tilde (<span>~</span>) met een spatie er voor en
+                er na te gebruiken.
+                <br> Bijvoorbeeld: <span>@LIST-cat ~ dog ~ monkey ~ pig ~ lion</span>
+            </p>
+
+            <div class="imagegroup">
+                <img src="assets/images/opbouw/lijst.PNG" alt="">
+                <img src="assets/images/opbouw/lijst_result.PNG" alt="">
+            </div>
+        </article>
+
+    </main>
+
+    <script src="assets/javascript/sidemenu.js"></script>
+    <script src="assets/javaScript/require.js"></script>
 </body>
+
 </html>

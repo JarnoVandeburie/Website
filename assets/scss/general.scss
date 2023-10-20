@@ -1,3 +1,6 @@
+@use "utilities/colors.scss";
+@use "utilities/variables.scss";
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 125px 20px 0 20px;
@@ -63,8 +66,8 @@ header {
   left: 0;
   width: 100vw;
   position: fixed;
-  background-color: #00cccc;
-  height: 75px;
+  background-color: colors.$main_color;
+  height: variables.$header_height;
   font-size: 1.5rem;
   font-weight: bold;
   display: flex;
@@ -138,14 +141,14 @@ span {
   header > div {
     width: 10%;
   }
+
   header {
     justify-content: space-between;
   }
+
   header > a {
     margin-right: 0;
     padding: 0;
     width: 50%;
   }
 }
-
-/*# sourceMappingURL=general.css.map */

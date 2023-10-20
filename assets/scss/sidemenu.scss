@@ -1,0 +1,207 @@
+@use "utilities/colors.scss";
+@use "utilities/variables.scss";
+
+.hamburger-menu__container,
+.nav__item {
+  width: variables.$header_height;
+  height: variables.$header_height;
+  background-color: colors.$secondary_color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    background-color: colors.$secondary_hover_color;
+  }
+}
+
+.hamburger-menu {
+  width: 50%;
+  position: relative;
+
+  &__line {
+    background-color: white;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  &__line:first-child,
+  &__line:last-child {
+    width: 100%;
+    position: absolute;
+    transition: all 0.1s ease-out;
+  }
+}
+
+.hamburger-menu__line {
+  &:not(:first-child):not(:last-child) {
+    animation-name: hamburger;
+    animation-duration: 0.15s;
+    animation-delay: 0.15s;
+    transform: scaleX(0);
+  }
+
+  &,
+  &:first-child,
+  &:last-child {
+    animation-fill-mode: forwards;
+  }
+
+  &:first-child,
+  &:last-child {
+    transform-origin: 50%;
+    animation-duration: 0.3s;
+  }
+
+  &:first-child {
+    top: 0;
+    animation-name: hamburgerFirst;
+    transform: rotate(45deg);
+  }
+
+  &:last-child {
+    top: 0;
+    animation-name: hamburgerLast;
+    transform: rotate(-45deg);
+  }
+}
+
+.hamburger-menu--open .hamburger-menu__line {
+  &:not(:first-child):not(:last-child) {
+    animation-name: hamburgerOpen;
+    transform: scaleX(100%);
+  }
+
+  &:first-child {
+    top: -10px;
+    transform: rotate(0);
+    animation-name: hamburgerFirstOpen;
+  }
+
+  &:last-child {
+    top: 10px;
+    transform: rotate(0);
+    animation-name: hamburgerLastOpen;
+  }
+}
+
+@keyframes hamburger {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes hamburgerOpen {
+  0% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes hamburgerFirst {
+  0% {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  100% {
+    top: 10px;
+    transform: rotate(0);
+  }
+}
+
+@keyframes hamburgerLast {
+  0% {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  100% {
+    top: -10px;
+    transform: rotate(0);
+  }
+}
+
+@keyframes hamburgerFirstOpen {
+  0% {
+    top: 10px;
+    transform: rotate(0);
+  }
+
+  50% {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes hamburgerLastOpen {
+  0% {
+    top: -12px;
+    transform: rotate(0);
+  }
+
+  50% {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+.nav__item {
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+
+  &:hover .nav__item-text {
+    left: 120%;
+    opacity: 1;
+  }
+
+  img {
+    max-width: calc(variables.$header_height * 0.6);
+    max-height: calc(variables.$header_height * 0.75);
+  }
+}
+
+.nav__item-text {
+  color: white;
+  background-color: colors.$secondary_hover_color;
+  position: absolute;
+  font-weight: 600;
+  left: 90%;
+  opacity: 0;
+  font-size: 1.25rem;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  padding: 8px;
+}
