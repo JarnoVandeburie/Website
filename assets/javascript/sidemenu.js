@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", init);
 var navOpen = false;
 
 function init() {
+  document.querySelector("body").style.opacity = 1;
+
   generateMenu();
   const sidebar = document.querySelector(".sidebar");
 
