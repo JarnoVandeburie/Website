@@ -23,19 +23,16 @@ h1 {
 
 .opdracht {
   min-height: 100vh;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  width: 90%;
+  margin: 0 auto 0 auto;
 
   > div {
-    padding-top: 125px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+    padding-top: 96px;
 
-.opdracht::-webkit-scrollbar {
-  display: none;
+    > h1 {
+      margin-bottom: 24px;
+    }
+  }
 }
 
 .scrollbar {
@@ -55,18 +52,19 @@ h1 {
     float: right;
     margin-top: 10px;
     padding: 10px;
-    background-color: #ccc;
+    background-color: colors.$main_color;
+    text-align: center;
+    font-weight: bold;
+    color: white;
     border-radius: 20px;
     width: 100%;
   }
 }
 
-.horizontal-spread {
+.vertical-middle {
   display: flex;
   flex-direction: row !important;
-  width: 100%;
   align-items: center;
-  justify-content: space-around;
 }
 
 img {

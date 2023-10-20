@@ -17,7 +17,7 @@
     <header>
         <div class="sidebar">
         </div>
-
+        <p>Stage Endare</p>
         <p><a href="index.html">Jarno Vandeburie</a></p>
     </header>
 
@@ -35,58 +35,68 @@
 
                 <div class="carousel">
                     <div class="carousel-item">
-                        <h2>Voorzie chatbot van style.</h2>
+                        <div>
+                            <h2>Voorzie chatbot van style.</h2>
+                            <div>
+                                <div>
+                                    <p>
+                                        Als eerste, inleidende opdracht kreeg ik toegang tot een vue project van een
+                                        chatbot. De
+                                        webpagina
+                                        was
+                                        nog niet voorzien van css en gebruikte bootstrap-vue.
+                                        Alsook de paginas met de resultaten en het transcript moesten omgevormd worden.
+                                        <br>
+                                        Mijn taak was om de webpagina te voorzien van de vooropgestelde stijl. <br>
+                                        De berichten scrollt automatisch naar beneden wanneer er een nieuw bericht is en
+                                        de
+                                        textarea
+                                        voor
+                                        het antwoord vergroot wanneer de tekst meerdere lijnen opneemt.
+                                    </p>
+                                </div>
+
+                                <img id="chatbot-img1" src="assets/images/stage_endare/chatbot/email.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
                         <div>
                             <div>
-                                <p>
-                                    Als eerste, inleidende opdracht kreeg ik toegang tot een vue project van een
-                                    chatbot. De
-                                    webpagina
-                                    was
-                                    nog niet voorzien van css en gebruikte bootstrap-vue.
-                                    Alsook de paginas met de resultaten en het transcript moesten omgevormd worden.
-                                    <br>
-                                    Mijn taak was om de webpagina te voorzien van de vooropgestelde stijl. <br>
-                                    De berichten scrollt automatisch naar beneden wanneer er een nieuw bericht is en de
-                                    textarea
-                                    voor
-                                    het antwoord vergroot wanneer de tekst meerdere lijnen opneemt.
+                                <h2>Maak de site responsive</h2>
+                                <p>Verder is de site ook volledig responsive. Det heb ik gedaan met view width en view
+                                    height
+                                    maar ook
+                                    met mediaqueries.</p>
+                            </div>
+                            <div class="vertical-middle">
+                                <img style="margin-right: 64px;" src="assets/images/stage_endare/chatbot/resolutie2.png"
+                                    width="60%">
+                                <img src="assets/images/stage_endare/chatbot/resolutie1.png" height="700">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <div>
+                                <h2>Grootste uitdagingen</h2>
+                                <p>Wanneer de user of de ai een bericht stuurt, dan moet er automatisch gescrold worden.
+                                    Wanneer de ai een antwoord aan het typen is, dan wordt de tekst geleidelijk getoond
+                                    en
+                                    moet er dus steeds gescrold worden wanneer het tekstvak vergroot.</p>
+                                <p>De oplossing hiervoor waren observers.<br>
+                                    Wanneer een bericht wordt toegevoegd aan de container "messages", dan wordt dat
+                                    gedetecteerd door een MutationObserver. Deze scrolt dan helemaal naar het einde van
+                                    de
+                                    container. <br>
+                                    Maar ook wordt er een ResizeObserver gelinkt aan het nieuwe bericht. Wanneer
+                                    het bericht groter wordt, dan wordt er automatisch naar beneden gescrold.<br>
+                                    Deze ResizeObserver heeft er ook voor gezorgd dat als je het venster verkleint of
+                                    vergroot, dat er automatisch naar beneden gescrold wordt.
                                 </p>
                             </div>
-
-                            <img id="chatbot-img1" src="assets/images/stage_endare/chatbot/email.png">
+                            <img src="assets/images/stage_endare/chatbot/code_snippet_observers.png" height="600">
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div>
-                            <h2>Maak de site responsive</h2>
-                            <p>Verder is de site ook volledig responsive. Det heb ik gedaan met view width en view
-                                height
-                                maar ook
-                                met mediaqueries.</p>
-                        </div>
-                        <div class="horizontal-spread">
-                            <img src="assets/images/stage_endare/chatbot/resolutie2.png" width="1000">
-                            <img src="assets/images/stage_endare/chatbot/resolutie1.png" height="700">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div>
-                            <h2>Grootste uitdagingen</h2>
-                            <p>Wanneer de user of de ai een bericht stuurt, dan moet er automatisch gescrold worden.
-                                Wanneer de ai een antwoord aan het typen is, dan wordt de tekst geleidelijk getoond en
-                                moet er dus steeds gescrold worden wanneer het tekstvak vergroot.</p>
-                            <p>De oplossing hiervoor waren observers.<br>
-                                Wanneer een bericht wordt toegevoegd aan de container "messages", dan wordt dat
-                                gedetecteerd door een MutationObserver. Deze scrolt dan helemaal naar het einde van de
-                                container. <br>
-                                Maar ook wordt er een ResizeObserver gelinkt aan het nieuwe bericht. Wanneer
-                                het bericht groter wordt, dan wordt er automatisch naar beneden gescrold.<br>
-                                Deze ResizeObserver heeft er ook voor gezorgd dat als je het venster verkleint of
-                                vergroot, dat er automatisch naar beneden gescrold wordt.
-                            </p>
-                        </div>
-                        <img src="assets/images/stage_endare/chatbot/code_snippet_observers.png" height="600">
                     </div>
                 </div>
             </div>
@@ -97,24 +107,30 @@
                 <h1>Opdracht 2 - Lorem Ipsum</h1>
 
                 <div class="carousel">
-                    <div class="carousel-item">
-                        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
-                        <div>
+                    <div class="carousel-item-container">
+                        <div class="carousel-item">
                             <div>
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, iste aperiam
-                                    voluptatibus quis natus esse?. <br>
-                                    Nam, excepturi saepe ab ad, ratione rerum quaerat eaque minus quam tempore harum,
-                                    quo nisi?
+                                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+                                <div>
+                                    <div>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, iste
+                                            aperiam
+                                            voluptatibus quis natus esse?. <br>
+                                            Nam, excepturi saepe ab ad, ratione rerum quaerat eaque minus quam tempore
+                                            harum,
+                                            quo nisi?
 
-                                </p>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <img src="assets/images/stage_endare/chatbot/code_snippet_observers.png" width="60%">
+                                <img src="assets/images/stage_endare/chatbot/code_snippet_observers.png" width="60%">
                             </div>
 
                         </div>
-
-                        <img src="assets/images/stage_endare/chatbot/code_snippet_observers.png" height="600">
-                        <img src="assets/images/stage_endare/chatbot/code_snippet_observers.png" height="600">
-
                     </div>
                 </div>
             </div>

@@ -102,7 +102,7 @@ label[for=compact] {
 }
 
 #compact:checked {
-  background-color: #00cccc;
+  background-color: #00adcc;
   border: none;
 }
 
@@ -111,7 +111,7 @@ label[for=compact] {
   left: 10px;
   position: fixed;
   display: flex;
-  background-color: #00cccc;
+  background-color: #00adcc;
   z-index: 1;
   border-radius: 25px;
 }

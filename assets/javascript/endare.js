@@ -2,62 +2,48 @@
 
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+var timer = null;
 
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-  document.querySelectorAll(".scrollbar a").forEach(element => {
-    element.addEventListener("click", () => {
-      disableScroll();
-      setTimeout(() => {
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (timer !== null) {
+        clearTimeout(timer);
+        disableScroll();
+      }
+      timer = setTimeout(function () {
         enableScroll();
-      }, 2000);
+      }, 150);
+    },
+    false
+  );
+
+  document.querySelectorAll(".scrollbar a").forEach(element => {
+    element.addEventListener("click", e => {
+      e.preventDefault();
+      const targetElement = document.querySelector(e.target.getAttribute("href"));
+
+      targetElement.scrollIntoView();
     });
   });
 }
 
-function preventDefault(e) {
-  e.preventDefault();
-}
-
-function preventDefaultForScrollKeys(e) {
-  if (keys[e.keyCode]) {
-    preventDefault(e);
-    return false;
-  }
-}
-
-// modern Chrome requires { passive: false } when adding event
-var supportsPassive = false;
-try {
-  window.addEventListener(
-    "test",
-    null,
-    Object.defineProperty({}, "passive", {
-      get: function () {
-        supportsPassive = true;
-      },
-    })
-  );
-} catch (e) {}
-
-var wheelOpt = supportsPassive ? { passive: false } : false;
-var wheelEvent = "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
-
 // call this to Disable
 function disableScroll() {
-  console.log("disableScroll");
-  window.addEventListener("DOMMouseScroll", preventDefault, false); // older FF
-  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-  window.addEventListener("touchmove", preventDefault, wheelOpt); // mobile
-  window.addEventListener("keydown", preventDefaultForScrollKeys, false);
+  document.querySelectorAll(".carousel-item").forEach(item => item.addEventListener("mousewheel", preventScroll, { passive: false }));
+  document.querySelectorAll(".carousel-item").forEach(item => item.addEventListener("DOMMouseScroll", preventScroll, { passive: false }));
 }
 
 function enableScroll() {
-  console.log("enableScroll");
-  window.removeEventListener("DOMMouseScroll", preventDefault, false);
-  window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
-  window.removeEventListener("touchmove", preventDefault, wheelOpt);
-  window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
+  document.querySelectorAll(".carousel-item").forEach(item => {
+    item.removeEventListener("mousewheel", preventScroll, { passive: false });
+    item.removeEventListener("DOMMouseScroll", preventScroll, { passive: false });
+  });
+}
+
+function preventScroll(e) {
+  e.preventDefault();
 }

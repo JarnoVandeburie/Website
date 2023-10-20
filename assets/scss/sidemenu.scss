@@ -5,7 +5,7 @@
 .nav__item {
   width: variables.$header_height;
   height: variables.$header_height;
-  background-color: colors.$secondary_color;
+  background-color: colors.$main_color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: colors.$secondary_hover_color;
+    background-color: colors.$secondary_color;
   }
 }
 
@@ -22,8 +22,8 @@
   position: relative;
 
   &__line {
-    background-color: white;
-    height: 3px;
+    background-color: colors.$header_text_color;
+    height: 5px;
     border-radius: 2px;
   }
 
@@ -190,12 +190,13 @@
   img {
     max-width: calc(variables.$header_height * 0.6);
     max-height: calc(variables.$header_height * 0.75);
+    filter: colors.$header_svg_color;
   }
 }
 
 .nav__item-text {
   color: white;
-  background-color: colors.$secondary_hover_color;
+  background-color: colors.$secondary_color;
   position: absolute;
   font-weight: 600;
   left: 90%;
@@ -203,5 +204,5 @@
   font-size: 1.25rem;
   white-space: nowrap;
   transition: all 0.3s ease-in-out;
-  padding: 8px;
+  padding: 16px;
 }

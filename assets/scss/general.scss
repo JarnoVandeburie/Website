@@ -73,7 +73,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: colors.$header_text_color;
   text-transform: uppercase;
   z-index: 2;
 }
@@ -83,7 +83,7 @@ header > * {
 }
 
 header > p > a {
-  color: white;
+  color: colors.$header_text_color;
   text-decoration: none;
   text-transform: none;
   float: right;
