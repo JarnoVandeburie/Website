@@ -12,11 +12,6 @@ main {
   width: 100%;
 }
 
-h1 {
-  font-size: 25px;
-  font-weight: bold;
-}
-
 #chatbot-img1 {
   width: 1000px;
 }
@@ -30,8 +25,16 @@ h1 {
     padding-top: 96px;
 
     > h1 {
-      margin-bottom: 24px;
+      font-size: 25px;
+      font-weight: bold;
     }
+    > h3 {
+      margin-top: 8px;
+    }
+  }
+
+  .carousel {
+    margin-top: 24px;
   }
 }
 
