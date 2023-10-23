@@ -24,10 +24,6 @@ li {
   margin-left: 18px;
 }
 
-main p {
-  line-height: 1.3rem;
-}
-
 h2 {
   font-size: 1.2rem;
   font-weight: bold;
@@ -43,6 +39,10 @@ main {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+
+  p {
+    line-height: 1.3rem;
+  }
 }
 
 article,
@@ -55,12 +55,12 @@ article {
   margin-bottom: 50px;
   padding: 0 40px 0 40px;
   position: relative;
-}
 
-article h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
 }
 
 header {
@@ -78,28 +78,37 @@ header {
   color: colors.$header_text_color;
   text-transform: uppercase;
   z-index: 2;
-}
 
-header > * {
-  width: 33.3%;
-}
+  > * {
+    width: 33.3%;
+  }
 
-header > p > a {
-  color: colors.$header_text_color;
-  text-decoration: none;
-  text-transform: none;
-  float: right;
-  padding-right: 30px;
-}
+  > p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
 
-header > a {
-  margin-right: 30px;
-}
+    a {
+      color: colors.$header_text_color;
+      text-decoration: none;
+      text-transform: none;
+      float: right;
+      padding-right: 30px;
+    }
+  }
 
-header > p {
-  text-align: center;
-  margin: 0;
-  font-size: 1.5rem;
+  a {
+    margin-right: 30px;
+  }
+
+  > div {
+    display: inline-block;
+
+    &:last-child {
+      float: right;
+      padding-right: 20px;
+    }
+  }
 }
 
 label,
@@ -115,15 +124,6 @@ form {
   margin-bottom: 20px;
 }
 
-header > div {
-  display: inline-block;
-}
-
-header > div:last-child {
-  float: right;
-  padding-right: 20px;
-}
-
 p {
   margin-bottom: 10px;
 }
@@ -134,23 +134,25 @@ span {
 }
 
 @media only screen and (max-width: 700px) {
-  header > a,
-  header > p {
-    font-size: 1rem;
+  header {
+    > a,
+    > p {
+      font-size: 1rem;
+    }
   }
 }
 @media only screen and (max-width: 450px) {
-  header > div {
-    width: 10%;
-  }
-
   header {
     justify-content: space-between;
-  }
 
-  header > a {
-    margin-right: 0;
-    padding: 0;
-    width: 50%;
+    > div {
+      width: 10%;
+    }
+
+    > a {
+      margin-right: 0;
+      padding: 0;
+      width: 50%;
+    }
   }
 }

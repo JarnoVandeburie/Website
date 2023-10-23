@@ -21,10 +21,6 @@ li {
   margin-left: 18px;
 }
 
-main p {
-  line-height: 1.3rem;
-}
-
 h2 {
   font-size: 1.2rem;
   font-weight: bold;
@@ -41,6 +37,9 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+main p {
+  line-height: 1.3rem;
+}
 
 article,
 form {
@@ -53,7 +52,6 @@ article {
   padding: 0 40px 0 40px;
   position: relative;
 }
-
 article h1 {
   font-size: 2rem;
   font-weight: bold;
@@ -76,27 +74,30 @@ header {
   text-transform: uppercase;
   z-index: 2;
 }
-
 header > * {
   width: 33.3%;
 }
-
-header > p > a {
+header > p {
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+}
+header > p a {
   color: white;
   text-decoration: none;
   text-transform: none;
   float: right;
   padding-right: 30px;
 }
-
-header > a {
+header a {
   margin-right: 30px;
 }
-
-header > p {
-  text-align: center;
-  margin: 0;
-  font-size: 1.5rem;
+header > div {
+  display: inline-block;
+}
+header > div:last-child {
+  float: right;
+  padding-right: 20px;
 }
 
 label,
@@ -110,15 +111,6 @@ input {
 
 form {
   margin-bottom: 20px;
-}
-
-header > div {
-  display: inline-block;
-}
-
-header > div:last-child {
-  float: right;
-  padding-right: 20px;
 }
 
 p {
@@ -137,11 +129,11 @@ span {
   }
 }
 @media only screen and (max-width: 450px) {
-  header > div {
-    width: 10%;
-  }
   header {
     justify-content: space-between;
+  }
+  header > div {
+    width: 10%;
   }
   header > a {
     margin-right: 0;

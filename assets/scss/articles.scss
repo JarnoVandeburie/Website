@@ -15,16 +15,16 @@
   position: initial;
 }
 
-article.compact .topText h1 {
-  margin-bottom: 0;
-}
-
 .list p:last-child {
   margin-top: 15px;
 }
 
 article {
   padding: 20px 30px;
+
+  &.compact .topText h1 {
+    margin-bottom: 0;
+  }
 }
 
 article img,
@@ -83,11 +83,11 @@ article img,
 .titleShort {
   width: fit-content;
   text-decoration: underline;
-}
 
-.titleShort:hover {
-  cursor: pointer;
-  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
 label[for="compact"] {
@@ -107,11 +107,11 @@ label[for="compact"] {
   appearance: none;
   outline: none;
   cursor: pointer;
-}
 
-#compact:checked {
-  background-color: colors.$main_color;
-  border: none;
+  &:checked {
+    background-color: colors.$main_color;
+    border: none;
+  }
 }
 
 #back {

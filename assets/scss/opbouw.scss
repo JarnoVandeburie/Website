@@ -1,24 +1,24 @@
 @use "utilities/colors.scss";
-article img {
-  width: 75%;
-  max-width: 800px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
-.imagegroup,
-article img {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
 article {
   padding-top: 40px;
   padding-bottom: 40px;
-}
 
-article h2 {
-  margin-bottom: 2px;
+  h2 {
+    margin-bottom: 2px;
+  }
+
+  img {
+    width: 75%;
+    max-width: 800px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .imagegroup,
+  img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
