@@ -1,4 +1,7 @@
 @use "utilities/colors.scss";
+@use "_general";
+@use "_sidemenu.scss";
+
 main {
   width: 80%;
   margin-left: auto;

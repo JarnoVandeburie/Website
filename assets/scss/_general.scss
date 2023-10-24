@@ -1,8 +1,11 @@
+@use "utilities/colors.scss";
+@use "utilities/variables.scss";
+
 body {
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
   font-family: Helvetica, Arial, sans-serif;
-  margin: 125px 20px 0 20px;
+  margin: calc(variables.$header_height + variables.$header_space) 20px 0 20px;
   background-color: #f5f5f5;
 }
 
@@ -36,9 +39,11 @@ main {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-}
-main p {
-  line-height: 1.3rem;
+
+  p {
+    line-height: 1.3rem;
+    margin-bottom: 0;
+  }
 }
 
 article,
@@ -46,58 +51,52 @@ form {
   border-radius: 30px;
 }
 
-article {
-  background-color: #eaeaea;
-  margin-bottom: 50px;
-  padding: 0 40px 0 40px;
-  position: relative;
-}
-article h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
 header {
   top: 0;
   left: 0;
   width: 100vw;
   position: fixed;
-  background-color: #00adcc;
-  height: 75px;
+  background-color: colors.$main_color;
+  height: variables.$header_height;
   font-size: 1.5rem;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: colors.$header_text_color;
   text-transform: uppercase;
   z-index: 2;
-}
-header > * {
-  width: 33.3%;
-}
-header > p {
-  text-align: center;
-  margin: 0;
-  font-size: 1.5rem;
-}
-header > p a {
-  color: white;
-  text-decoration: none;
-  text-transform: none;
-  float: right;
-  padding-right: 30px;
-}
-header a {
-  margin-right: 30px;
-}
-header > div {
-  display: inline-block;
-}
-header > div:last-child {
-  float: right;
-  padding-right: 20px;
+
+  > * {
+    width: 33.3%;
+  }
+
+  > p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+
+    a {
+      color: colors.$header_text_color;
+      text-decoration: none;
+      text-transform: none;
+      float: right;
+      padding-right: 30px;
+    }
+  }
+
+  a {
+    margin-right: 30px;
+  }
+
+  > div {
+    display: inline-block;
+
+    &:last-child {
+      float: right;
+      padding-right: 20px;
+    }
+  }
 }
 
 label,
@@ -113,33 +112,31 @@ form {
   margin-bottom: 20px;
 }
 
-p {
-  margin-bottom: 10px;
-}
-
 span {
   font-style: italic;
   font-weight: bold;
 }
 
 @media only screen and (max-width: 700px) {
-  header > a,
-  header > p {
-    font-size: 1rem;
+  header {
+    > a,
+    > p {
+      font-size: 1rem;
+    }
   }
 }
 @media only screen and (max-width: 450px) {
   header {
     justify-content: space-between;
-  }
-  header > div {
-    width: 10%;
-  }
-  header > a {
-    margin-right: 0;
-    padding: 0;
-    width: 50%;
+
+    > div {
+      width: 10%;
+    }
+
+    > a {
+      margin-right: 0;
+      padding: 0;
+      width: 50%;
+    }
   }
 }
-
-/*# sourceMappingURL=general.css.map */

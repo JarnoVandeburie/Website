@@ -49,9 +49,11 @@ function updateCarousel(carousel) {
   carousel.querySelector(".carousel-buttons p").innerText = parseInt(carousel.getAttribute("data-id")) + 1 + " / " + carousel.querySelectorAll(".carousel-item").length;
   carousel.querySelectorAll(".carousel-item").forEach((image, index) => {
     if (index === parseInt(carousel.getAttribute("data-id"))) {
+      image.style.pointerEvents = "all";
       image.style.opacity = 1;
     } else {
       image.style.opacity = 0;
+      image.style.pointerEvents = "none";
     }
   });
 }

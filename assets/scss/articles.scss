@@ -1,4 +1,7 @@
 @use "utilities/colors.scss";
+@use "_general";
+@use "_sidemenu.scss";
+
 .topText {
   position: relative;
 
@@ -11,19 +14,36 @@
   }
 }
 
-#articles .topText {
-  position: initial;
-}
-
 .list p:last-child {
   margin-top: 15px;
 }
 
 article {
-  padding: 20px 30px;
+  background-color: #eaeaea;
+  margin-bottom: 32px;
+  padding: 32px;
+  position: relative;
 
-  &.compact .topText h1 {
-    margin-bottom: 0;
+  .topText h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  &.compact {
+    padding: 16px;
+    margin-bottom: 16px;
+
+    > div > div {
+      display: none;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .topText h1 {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -135,22 +155,6 @@ label[for="compact"] {
 
 #back:hover a {
   text-decoration: underline;
-}
-
-.compact {
-  margin-bottom: 10px;
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  > div > div {
-    display: none;
-  }
-
-  .logo {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 600px) {

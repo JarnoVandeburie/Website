@@ -1,4 +1,7 @@
 @use "utilities/colors.scss";
+@use "_general";
+@use "_sidemenu.scss";
+
 article {
   padding-top: 40px;
   padding-bottom: 40px;

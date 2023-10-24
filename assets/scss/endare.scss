@@ -1,4 +1,7 @@
 @use "utilities/colors.scss";
+@use "_general";
+@use "_sidemenu.scss";
+
 html {
   scroll-behavior: smooth;
 }
@@ -29,6 +32,9 @@ main {
       font-weight: bold;
     }
     > h3 {
+      margin-top: 8px;
+    }
+    ul {
       margin-top: 8px;
     }
   }
