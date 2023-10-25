@@ -1,7 +1,6 @@
 .carousel {
   position: relative;
-  max-height: 800px;
-  height: 75vh;
+  min-height: inherit;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -27,6 +26,13 @@
   /* Handle */
   /* Handle on hover */
 }
+.carousel .carousel-item h2 {
+  margin-bottom: 8px;
+}
+.carousel .carousel-item h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
 .carousel .carousel-item > div {
   direction: ltr;
 }
@@ -50,7 +56,7 @@
   position: absolute;
   top: 0;
   margin-left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -120%);
   display: flex;
   align-items: center;
 }

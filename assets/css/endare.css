@@ -317,12 +317,14 @@ main {
 }
 
 .opdracht {
-  min-height: 100vh;
   width: 90%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 .opdracht > div {
-  padding-top: 96px;
+  min-height: calc(100vh - 212px);
+  max-height: calc(100vh - 212px);
+  padding-top: 106px;
+  padding-bottom: 106px;
 }
 .opdracht > div > h1 {
   font-size: 25px;
@@ -333,9 +335,6 @@ main {
 }
 .opdracht > div ul {
   margin-top: 8px;
-}
-.opdracht .carousel {
-  margin-top: 24px;
 }
 
 .scrollbar {
